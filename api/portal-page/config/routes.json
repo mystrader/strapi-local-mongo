@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/portal-pages",
+      "handler": "portal-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-pages/count",
+      "handler": "portal-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-pages/:id",
+      "handler": "portal-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/portal-pages",
+      "handler": "portal-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/portal-pages/:id",
+      "handler": "portal-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/portal-pages/:id",
+      "handler": "portal-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

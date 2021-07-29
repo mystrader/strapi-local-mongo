@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/portal-themes",
+      "handler": "portal-theme.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-themes/count",
+      "handler": "portal-theme.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-themes/:id",
+      "handler": "portal-theme.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/portal-themes",
+      "handler": "portal-theme.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/portal-themes/:id",
+      "handler": "portal-theme.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/portal-themes/:id",
+      "handler": "portal-theme.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

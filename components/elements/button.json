@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_elements_buttons",
+  "info": {
+    "name": "Button",
+    "icon": "hand-pointer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "large",
+        "medium",
+        "small"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "inherit",
+        "primary",
+        "secondary"
+      ]
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "contained",
+        "outlined",
+        "text"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/portal-homes",
+      "handler": "portal-home.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-homes/count",
+      "handler": "portal-home.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-homes/:id",
+      "handler": "portal-home.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/portal-homes",
+      "handler": "portal-home.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/portal-homes/:id",
+      "handler": "portal-home.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/portal-homes/:id",
+      "handler": "portal-home.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

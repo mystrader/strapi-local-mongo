@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_theme_palettes",
+  "info": {
+    "name": "Palette",
+    "icon": "layer-group"
+  },
+  "options": {},
+  "attributes": {
+    "primary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "theme.palette-color"
+    },
+    "secondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "theme.palette-color"
+    },
+    "success": {
+      "type": "component",
+      "repeatable": false,
+      "component": "theme.palette-color"
+    },
+    "error": {
+      "type": "component",
+      "repeatable": false,
+      "component": "theme.palette-color"
+    },
+    "warning": {
+      "type": "component",
+      "repeatable": false,
+      "component": "theme.palette-color"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "theme.palette-color"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    }
+  }
+}

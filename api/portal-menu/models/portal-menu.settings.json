@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portal_menus",
+  "info": {
+    "name": "PortalMenu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "portal": {
+      "unique": true,
+      "model": "portal",
+      "via": "portal_menu"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.menu-item"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.button"
+    }
+  }
+}

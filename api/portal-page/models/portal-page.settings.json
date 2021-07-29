@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portal_pages",
+  "info": {
+    "name": "PortalPage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "portal": {
+      "model": "portal",
+      "via": "portal_pages"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.multiple-features-section",
+        "sections.single-feature-section",
+        "sections.markdown",
+        "sections.hero"
+      ]
+    }
+  }
+}

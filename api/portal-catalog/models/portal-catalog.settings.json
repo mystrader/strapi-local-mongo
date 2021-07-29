@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portal_catalogs",
+  "info": {
+    "name": "PortalCatalog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "portal": {
+      "unique": true,
+      "model": "portal",
+      "via": "portal_catalog"
+    },
+    "section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.container"
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portals",
+  "info": {
+    "name": "Portal"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "portal_home": {
+      "via": "portal",
+      "model": "portal-home"
+    },
+    "portal_theme": {
+      "via": "portal",
+      "model": "portal-theme"
+    },
+    "portal_catalog": {
+      "via": "portal",
+      "model": "portal-catalog"
+    },
+    "portal_pages": {
+      "via": "portal",
+      "collection": "portal-page"
+    },
+    "portal_menu": {
+      "via": "portal",
+      "model": "portal-menu"
+    }
+  }
+}

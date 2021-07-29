@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/portal-catalogs",
+      "handler": "portal-catalog.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-catalogs/count",
+      "handler": "portal-catalog.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-catalogs/:id",
+      "handler": "portal-catalog.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/portal-catalogs",
+      "handler": "portal-catalog.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/portal-catalogs/:id",
+      "handler": "portal-catalog.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/portal-catalogs/:id",
+      "handler": "portal-catalog.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

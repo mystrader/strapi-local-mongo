@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_theme_palette_colors",
+  "info": {
+    "name": "PaletteColor",
+    "icon": "paint-roller",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "light": {
+      "type": "string"
+    },
+    "main": {
+      "type": "string",
+      "required": true
+    },
+    "dark": {
+      "type": "string"
+    },
+    "contrastText": {
+      "type": "string"
+    }
+  }
+}

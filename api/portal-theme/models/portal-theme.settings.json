@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portal_themes",
+  "info": {
+    "name": "PortalTheme",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "portal": {
+      "unique": true,
+      "model": "portal",
+      "via": "portal_theme"
+    },
+    "palette": {
+      "type": "component",
+      "repeatable": false,
+      "component": "theme.palette"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

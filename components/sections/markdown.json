@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_markdowns",
+  "info": {
+    "name": "Markdown",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

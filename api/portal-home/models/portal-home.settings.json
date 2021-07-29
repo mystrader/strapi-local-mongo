@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portal_homes",
+  "info": {
+    "name": "PortalHome",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "portal": {
+      "unique": true,
+      "model": "portal",
+      "via": "portal_home"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.multiple-features-section",
+        "sections.single-feature-section",
+        "sections.markdown",
+        "sections.hero"
+      ]
+    }
+  }
+}
