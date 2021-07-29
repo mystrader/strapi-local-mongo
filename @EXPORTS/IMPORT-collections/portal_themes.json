@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eec6"
+  },
+  "published_at": {
+    "$date": "2021-03-14T23:46:03.302Z"
+  },
+  "palette": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d1a"
+      },
+      "kind": "ComponentThemePalette",
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eec7"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-03-14T23:44:33.175Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-27T13:29:14.626Z"
+  },
+  "__v": 1,
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "portal": {
+    "$oid": "604e9b4972a96c7ddfe94ec4"
+  },
+  "logo": {
+    "$oid": "608810f443cbc9001b211cec"
+  }
+}]

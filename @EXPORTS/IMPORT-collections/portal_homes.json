@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "604e9c1c9e39e57fbf54c1a0"
+  },
+  "published_at": {
+    "$date": "2021-03-14T23:28:31.679Z"
+  },
+  "sections": [
+    {
+      "_id": {
+        "$oid": "60881c1643cbc9001b211d76"
+      },
+      "kind": "ComponentSectionsHero",
+      "ref": {
+        "$oid": "6073798b6b3e24001c901353"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60881c1643cbc9001b211d77"
+      },
+      "kind": "ComponentSectionsMultipleFeaturesSection",
+      "ref": {
+        "$oid": "604a3fe6b9e9af2c5c785291"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60881c1643cbc9001b211d78"
+      },
+      "kind": "ComponentSectionsMultipleFeaturesSection",
+      "ref": {
+        "$oid": "604a4b65b9e9af2c5c7852b1"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60881c1643cbc9001b211d79"
+      },
+      "kind": "ComponentSectionsSingleFeatureSection",
+      "ref": {
+        "$oid": "604a4ee6b9e9af2c5c785302"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60881c1643cbc9001b211d7a"
+      },
+      "kind": "ComponentSectionsMultipleFeaturesSection",
+      "ref": {
+        "$oid": "604a4c94b9e9af2c5c7852e2"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-03-14T23:28:28.921Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-27T14:13:42.269Z"
+  },
+  "__v": 1,
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal": {
+    "$oid": "604e9b4972a96c7ddfe94ec4"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "604e9e98318997085ff0c8c8"
+  },
+  "published_at": null,
+  "hero": [
+    {
+      "_id": {
+        "$oid": "604e9ec2318997085ff0c8cd"
+      },
+      "kind": "ComponentSectionsHero",
+      "ref": {
+        "$oid": "604e9e98318997085ff0c8c9"
+      }
+    }
+  ],
+  "sections": [],
+  "createdAt": {
+    "$date": "2021-03-14T23:39:04.195Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-14T23:39:46.832Z"
+  },
+  "__v": 1,
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal": {
+    "$oid": "604e9b6e72a96c7ddfe94ec5"
+  },
+  "updated_by": {
+    "$oid": "604a28408930b174a706aea7"
+  }
+}]

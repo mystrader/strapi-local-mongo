@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "604e9b4972a96c7ddfe94ec4"
+  },
+  "name": "marketplace",
+  "published_at": {
+    "$date": "2021-03-14T23:25:01.865Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-14T23:24:57.340Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-27T14:13:42.268Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "updated_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal_home": {
+    "$oid": "604e9c1c9e39e57fbf54c1a0"
+  },
+  "portal_theme": {
+    "$oid": "604e9fe18b08920af7d2eec6"
+  },
+  "portal_guide": {
+    "$oid": "604ea1ceb6a0580fafe61053"
+  },
+  "portal_help": {
+    "$oid": "604f8d6badc2855b3b25bb46"
+  },
+  "portal_catalog": {
+    "$oid": "604f9193b04aa5667ce40407"
+  },
+  "portal_menu": {
+    "$oid": "605141f5d551a16f09b7596c"
+  }
+},{
+  "_id": {
+    "$oid": "604e9b6e72a96c7ddfe94ec5"
+  },
+  "name": "corporativo",
+  "published_at": {
+    "$date": "2021-03-14T23:25:43.719Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-14T23:25:34.788Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-14T23:39:46.831Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "updated_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal_home": {
+    "$oid": "604e9e98318997085ff0c8c8"
+  }
+}]

@@ -1,0 +1,152 @@
+[{
+  "_id": {
+    "$oid": "604a3fe6b9e9af2c5c785292"
+  },
+  "title": "Início",
+  "summary": "Saiba como iniciar sua integração",
+  "backgroundColor": "#ffffff",
+  "__v": 0,
+  "image": {
+    "$oid": "608810ef43cbc9001b211ce0"
+  }
+},{
+  "_id": {
+    "$oid": "604a4058b9e9af2c5c785299"
+  },
+  "title": "FAQ",
+  "summary": "Veja algumas perguntas frequentes ",
+  "backgroundColor": "#ffffff",
+  "__v": 0,
+  "image": {
+    "$oid": "608810ef43cbc9001b211ce3"
+  }
+},{
+  "_id": {
+    "$oid": "604a4138b9e9af2c5c7852a1"
+  },
+  "title": "API Explorer",
+  "summary": "Conheça as especificações das API's",
+  "textColor": "",
+  "__v": 0,
+  "image": {
+    "$oid": "608810ef43cbc9001b211ce1"
+  },
+  "backgroundColor": "#ffffff"
+},{
+  "_id": {
+    "$oid": "604a4b65b9e9af2c5c7852b5"
+  },
+  "title": "/sellerItems",
+  "__v": 0,
+  "image": {
+    "$oid": "608810f243cbc9001b211ce6"
+  },
+  "backgroundColor": "#006700",
+  "summary": "Gerenciamento dos produtos disponibilizados nos portais de vendas"
+},{
+  "_id": {
+    "$oid": "604a4b65b9e9af2c5c7852b4"
+  },
+  "title": "/imports",
+  "__v": 0,
+  "image": {
+    "$oid": "608810ef43cbc9001b211ce2"
+  },
+  "backgroundColor": "#006700",
+  "summary": "Operação de envio unitário de ficha de produto"
+},{
+  "_id": {
+    "$oid": "604a4b65b9e9af2c5c7852b7"
+  },
+  "title": "/categories",
+  "__v": 0,
+  "image": {
+    "$oid": "608810f243cbc9001b211ce4"
+  },
+  "backgroundColor": "#006700",
+  "summary": "Obtenção da árvore de categorias utilizada para classificação nos portais de vendas"
+},{
+  "_id": {
+    "$oid": "604a4b65b9e9af2c5c7852b6"
+  },
+  "title": "/orders",
+  "__v": 0,
+  "image": {
+    "$oid": "608810f243cbc9001b211ce8"
+  },
+  "backgroundColor": "#006700",
+  "summary": "Gerenciamento dos pedidos realizados nos portais de vendas"
+},{
+  "_id": {
+    "$oid": "604a4c94b9e9af2c5c7852e7"
+  },
+  "__v": 0,
+  "image": {
+    "$oid": "608810f443cbc9001b211ced"
+  }
+},{
+  "_id": {
+    "$oid": "604a4c94b9e9af2c5c7852e6"
+  },
+  "__v": 0,
+  "image": {
+    "$oid": "608810f343cbc9001b211cea"
+  }
+},{
+  "_id": {
+    "$oid": "604a4c94b9e9af2c5c7852e5"
+  },
+  "__v": 0,
+  "image": {
+    "$oid": "608810f343cbc9001b211ceb"
+  }
+},{
+  "_id": {
+    "$oid": "604a4c94b9e9af2c5c7852e8"
+  },
+  "__v": 0,
+  "image": {
+    "$oid": "608810f343cbc9001b211ce9"
+  }
+},{
+  "_id": {
+    "$oid": "604ead506636fd2ea7edb53f"
+  },
+  "title": "Registre seu aplicativo",
+  "__v": 0,
+  "image": {
+    "$oid": "604ead3e6636fd2ea7edb539"
+  },
+  "backgroundColor": "#fafafa",
+  "href": "#section/Principais-Resources/Portal"
+},{
+  "_id": {
+    "$oid": "604eaf7c6636fd2ea7edb547"
+  },
+  "title": "Autenticação e autorização",
+  "__v": 0,
+  "image": {
+    "$oid": "604eafdd6636fd2ea7edb54c"
+  },
+  "backgroundColor": "#fafafa"
+},{
+  "_id": {
+    "$oid": "604eb0c36636fd2ea7edb55a"
+  },
+  "title": "Realizar testes",
+  "backgroundColor": "#fafafa",
+  "__v": 0,
+  "image": {
+    "$oid": "604eb08c6636fd2ea7edb556"
+  }
+},{
+  "_id": {
+    "$oid": "604eb0c36636fd2ea7edb55b"
+  },
+  "title": "Integração",
+  "backgroundColor": "#fafafa",
+  "__v": 0,
+  "image": {
+    "$oid": "604eb08c6636fd2ea7edb555"
+  }
+}]

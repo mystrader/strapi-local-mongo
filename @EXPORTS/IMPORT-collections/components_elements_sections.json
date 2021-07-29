@@ -1,0 +1,128 @@
+[{
+  "_id": {
+    "$oid": "604a3d45b9e9af2c5c785280"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "604a35d836560218b6f2f1c7"
+  },
+  "backgroundColor": "red"
+},{
+  "_id": {
+    "$oid": "604a4b65b9e9af2c5c7852b2"
+  },
+  "backgroundColor": "#009200",
+  "textColor": "#ffffff",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a4c94b9e9af2c5c7852e3"
+  },
+  "backgroundColor": "#18483C",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9c1c9e39e57fbf54c1a2"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "605a31617ed475001b1ed31e"
+  },
+  "backgroundColor": ""
+},{
+  "_id": {
+    "$oid": "604eaa952939262b96eba899"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "604f4c2a6636fd2ea7edb57e"
+  }
+},{
+  "_id": {
+    "$oid": "604ead506636fd2ea7edb53d"
+  },
+  "backgroundColor": "#ffffff",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604f8eebadc2855b3b25bb50"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "604a35d836560218b6f2f1c7"
+  }
+},{
+  "_id": {
+    "$oid": "604f9193b04aa5667ce40408"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "604a35d836560218b6f2f1c7"
+  }
+},{
+  "_id": {
+    "$oid": "604f96538629a770c6213735"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "608810f643cbc9001b211cee"
+  },
+  "backgroundColor": ""
+},{
+  "_id": {
+    "$oid": "6051301e359e623e223af60d"
+  },
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "604a35d836560218b6f2f1c7"
+  }
+},{
+  "_id": {
+    "$oid": "605131855ff131427a9a8dd8"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "605a31617ed475001b1ed31e"
+  }
+},{
+  "_id": {
+    "$oid": "6051391b9239554f92464504"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundColor": "blue",
+  "backgroundImage": null
+},{
+  "_id": {
+    "$oid": "605139b79239554f92464515"
+  },
+  "backgroundColor": "lightblue",
+  "textColor": "#fff",
+  "__v": 0,
+  "backgroundImage": null
+},{
+  "_id": {
+    "$oid": "6073798b6b3e24001c901354"
+  },
+  "textColor": "#ffffff",
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "608810f643cbc9001b211cee"
+  },
+  "backgroundColor": ""
+},{
+  "_id": {
+    "$oid": "60881c7e43cbc9001b211d7f"
+  },
+  "__v": 0,
+  "backgroundImage": {
+    "$oid": "608810f643cbc9001b211cee"
+  }
+}]

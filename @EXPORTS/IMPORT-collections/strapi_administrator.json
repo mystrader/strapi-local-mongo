@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "609c1d8cf60639001bb789e4"
+  },
+  "isActive": true,
+  "blocked": false,
+  "roles": [
+    {
+      "$oid": "6054a662b21343001c7cdeda"
+    }
+  ],
+  "username": null,
+  "registrationToken": null,
+  "firstname": "John",
+  "lastname": "Doe",
+  "email": "admin@viavarejo.com.br",
+  "password": "$2a$10$wr9c3bW9FzbOCxzWHX9Hm.KM84..KHJ2DbNmyVvtxZjWvHghRjEKC",
+  "__v": 0
+}]

@@ -1,0 +1,153 @@
+[{
+  "_id": {
+    "$oid": "605131625ff131427a9a8dcd"
+  },
+  "published_at": {
+    "$date": "2021-03-16T22:29:57.709Z"
+  },
+  "markdown": "# Visão Geral\nO teste API Management V1 é um conjunto de APIs que fornece suporte a controle das informações no API Manager e Dev Portal da Via Varejo. Utilizando as APIs disponíveis nesse documento é possível criar uma API para ser exposta no catálogo interno ou externo da Via Varejo, expor um serviço para ser consumidor por aplicações internas ou externas da Via Varejo, impor comportamentos, controle de acesso e restrições de uso a uma API que será gerenciada pela plataforma.\n \nUtiliza essas APIs para:\n \n- Gerenciar API Products\n \n- Gerenciar API Resources\n \n- Gerenciar API Proxies\n \n- Gerenciar Gateways\n \n- Gerenciar Planos (Plans)\n \n- Gerenciar Roles de Usuários\n \n- Gerenciar Openid Issuers\n \n- Gerenciar Upstream Templates\n \n- Gerenciar Portais\n \n- Visualizar API Health Status\n \n- Gerenciar Categorias de APIs\n \n- Gerenciar Especificações (API Specs)\n \nO Consumo das APIs estão disponíveis para testes e desenvolvimento no ambiente de SIT [Integration] e HLG [Homologation]. E produção para uso produtivo (Requer aprovação de acesso)\n \n## Como o API Management V1 funciona?\n \n- A plataforma é divida de forma geral entre gerenciamento de APIs Gateways, Catalogo de APIs e documentações e Consumo\n \n- O API Manager será parte da plataforma de API Management da Via Varejo, que possuirá como objetivo manter centralizado em uma única ferramenta a gestão de APIs da Via Varejo entre os APIs Gateways.\n \n- O Dev Portal será um portal com o objetivo de atender os desenvolvedores da Via, sendo eles parceiros ou colaboradores internos. De forma que todos possam consultar as documentações das APIs disponíveis para utilização no ambiente da Via Varejo.\n \n\n \nOu seja não é necessário acessar nenhum outro sistema para expor ou documentar uma API. \n \n## Consumindo esta API\n \nPara o consumo dessa API se faz necessário criar um APP, selecionar o API Product, o ambiente e as roles de acesso, conforme passos abaixo:\n \n1. Log on.\n \n2. Acesse a página Meus Aplicativos\n \n3. Criar um Aplicativo\n \n4. Digite o nome do aplicativo\n \n5. Digite a descrição do aplicativo\n \n6. Escolha o ambiente desejado que será consumido (Não utilize ambientes diferentes dos quais a aplicação que irá consumir está. Ex.: Aplicação em SIT consumindo PRD)\n \n7. Selecione o tipo da aplicação Daemon (Server-to-Server), quando o consumo da API for realizado por um outro serviço instalado em um servidor. Ou algum dos demais que aplicação se enquadrar. \n \n8. Selecione o API Product: API Management V1\n \n9. Selecione a role conforme a necessidade do aplicativo\n \nAs solicitações de acessos para ambientes produtivos serão avalidas se podem ser liberadas e se as roles selecionadas podem ser utilizadas. Portanto não selecione role a mais do que será utilizado pelo aplicativo.\n \n### Autenticação\n \nApós o APP ter sido criado e estar com o status de Ativo na página de meus APPs, as credenciais do mesmo poderá ser utilizada para o consumo das APIs listadas nessa documentação.  Se a aplicação for server-to-server será possível escolher entre authenticação por Api Key, Basic Auth ou OAuth 2. Caso seja qualquer outro tipo, apenas ficará disponível OAuth 2. \n \n#### OAuth 2\n \nPara a utilização da autenticação Oauth 2, será necessário gerar um Bearer Token antes de realizar a requisição para esta API.\n \n- Deverá ser realizada uma requisição POST no endereço: https://login.microsoftonline.com/apimanagementviavarejo.onmicrosoft.com/oauth2/v2.0/token\n \n- Com os parametros abaixo no Body no formato: x-www-form-urlencoded: \n \n- grant_type: client_credentials\n \n- client_id: (Client ID Gerado ao criar o APP no tópico anterior)\n \n- client_secret: (Client Secret Gerado ao criar o APP no tópico anterior)\n \n- scope: https://apimanagementviavarejo.onmicrosoft.com/apimanagement-v1/.default\n \n#### API Key\n \nPara autenticação por API Key basta enviar no header das requisições feitas o cabeçalho \"apiKey\" com o API Key gerado ao criar o APP. \n \n\n \n#### Basic Auth\n \nPara autenticação por Basic Auth basta enviar no header das requisições feitas o cabeçalho \"Authorization Bsic\" seguindo o padrão de codificação de autenticações basic auth, onde o usuário é o name do app criado e o password é a chave contida no campo Basic Auth, gerado ao criar o APP.\n \n### Roles\n \n| Roles | Permissões |\n \n| --- | :---: |\n \n| CONSUMER | Consumers podem visualizar o catálogo de APIs (API Products, Specs e API Resource) e Criar APPs |\n \n| PRODUCER      | Producers podem criar e editarem API Products, API Proxys e API Resources) |\n \n| ADMIN      | Possuem acesso de leitura e escrita em todas as APIs |\n \n| EDITOR                  | Podem editar documentações |\n \n| OPERADOR                  | Podem editar e atribuir planos e gerenciar APPs criados |\n \n| INTERNAL_USER  | Podem visualizar o catálogo de APIs marcadas como Internas |\n\n\n \n# Principais Resources\n \n\n \n## API Product\n \n\n \nUm API Product é um empacotamento de APIs em um Produto, de modo que entregue uma funcionalidade coesa e desejada, focada na experiência dos App Developers. Um API Product pode empacotar funcionalidades de varios serviços/microserviços, de forma que sua modelagem fique sempre voltada ao negócio e não a infraestrutura ou arquitetura utilizada. \n \n## API Spec\n \n\n \nÉ a documentação de uma API (API Product). A specificação OpenAPI v2 (Popularmente conhecida como Swagger) e OpenAPI v3 são utilizados para descrever as interfaces das APIs a serem implementadas. São artefatos aderentes à convenção Swagger/OpenAPI http://swagger.io. A versão suportada pelo DevPortal é a Versão 2 e 3. Preferenciamente é recomendado o uso da versão 3, por trazer novos recursos.\n \n\n \n## API Resource\n \n\n \nUm API Resource é um agrupamento de API Proxys, similar ao API Product, porem voltado a gestão e não ao consumo. \n \n\n \n## API Proxy\n \n\n \nUm API Proxy é uma camada para acesso ao backend no API Gateway, ele pode agregar funcionalidades permitindo que o backend se preocupe apenas com o negócio, como por exemplo habilitar cache a uma operação de uma API, limitar o tamanho de uma requisição, habitar autenticação, modificar o path, header ou payload de uma requisição, entre outras funcionalidades. \n \n\n \n## Category\n \n\n \nCategoria utilizada para classificação dos API Products disponíveis no catálogo. \n \n\n \n## Gateways\n \n\n \nO API Gateway atua como um front-end de API, recebe requisições, aplica políticas de limitação e segurança, passa as requisições para o serviço de back-end e, em seguida, devolve a resposta ao solicitante. Todos os API Proxys criados dependem de um gateway para ser feito a exposição. \n \n\n \n## Upstream Templates\n \n\n \nO Upstream template é um conjunto de políticas definidas pelos responsáveis pela governança de API, que delimita funcionalidades que um API Proxy pode ou não possuir.\n \n\n \n## Portal\n \n\n \nO Portal é um catalogo de APIs lógico, ou seja, é possível definir quais APIs serão listadas.\n \n\n \n## Plan \n \n\n \nO Plan define o limite de consumo que um APP poderá fazer em determinada API.\n \n\n \n## Openid Issuer\n \n\n \nO Openid Issuer é um emissor de token (geralmente um identity provider) confiavel, ou seja todos os tokens gerados pelo mesmo será valido para ser utilizado com Oauth2 em requisições de APIs.\n \n\n \n## Health Status\n \n\n \nExibe a saúde de uma API baseado nos status obtidos de health check. \n\n \n#### Request de exemplo para gerar token oauth2\n \n```shell\n \ncurl -X POST -k https://login.microsoftonline.com/apimanagementviavarejo.onmicrosoft.com/oauth2/v2.0/token \\\n \n-H 'Cache-Control: no-cache' \\\n \n-H 'Content-Type: application/x-www-form-urlencoded' \\\n \n-d 'grant_type=client_credentials&client_id={client_id_gerado_no_app}&client_secret={client_secret_gerado_no_app}&scope=https://apimanagementviavarejo.onmicrosoft.com/apimanagement-v1/.default'\n \n```\n \n#### Response de exemplo\n \n```json\n \n{\n \n \"access_token\": \"{seu_novo_access_token}\",\n \n  \"refresh_token\": \"{seu_novo_refresh_token}\",\n \n  \"token_type\": \"Bearer\",\n \n  \"expires_in\": 7193\n \n }\n \n```\n \nArmazene o `access_token` para acesso a API, e o `refresh_token` para renovar o access token (`access_token`) quando ele expirar.\n \n#### Requisição de exemplo usando o token OAuth2\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'Authorization: Bearer {seu_novo_access_token}' \n \n```\n \n\n \n#### Requisição de exemplo usando o API Key\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'apiKey: {sua api key gerada ao cadastrar o APP}'\n \n```\n \n\n \n#### Requisição de exemplo usando o Basic Auth\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'Authorization: Basic {Usuario e Senha gerado no APP no formato para Basic Auth}'\n \n```\n \n# Release Notes\n \n\n \n## Version 1.0\n \n- Versão inicial com os recursos listados no documento\n- \n- \n- \n- \n- \n- dsdasd\n- sds\n- adsa\n- d",
+  "slug": "primeiros-passos",
+  "title": "Primeiros Passos",
+  "hero": [
+    {
+      "_id": {
+        "$oid": "6051466063eb7a7302d1af7d"
+      },
+      "kind": "ComponentSectionsHero",
+      "ref": {
+        "$oid": "605131625ff131427a9a8dce"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "_id": {
+        "$oid": "60881c7e43cbc9001b211d83"
+      },
+      "kind": "ComponentSectionsHero",
+      "ref": {
+        "$oid": "60881c5943cbc9001b211d7b"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60881c7e43cbc9001b211d84"
+      },
+      "kind": "ComponentSectionsMarkdown",
+      "ref": {
+        "$oid": "60737fe06b3e24001c9013f0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-03-16T22:29:54.616Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-27T14:15:26.524Z"
+  },
+  "__v": 1,
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal": {
+    "$oid": "604e9b4972a96c7ddfe94ec4"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "605131855ff131427a9a8dd6"
+  },
+  "markdown": "# Visão Geral\nO API Management V1 é um conjunto de APIs que fornece suporte a controle das informações no API Manager e Dev Portal da Via Varejo. Utilizando as APIs disponíveis nesse documento é possível criar uma API para ser exposta no catálogo interno ou externo da Via Varejo, expor um serviço para ser consumidor por aplicações internas ou externas da Via Varejo, impor comportamentos, controle de acesso e restrições de uso a uma API que será gerenciada pela plataforma.\n \nUtiliza essas APIs para:\n \n- Gerenciar API Products\n \n- Gerenciar API Resources\n \n- Gerenciar API Proxies\n \n- Gerenciar Gateways\n \n- Gerenciar Planos (Plans)\n \n- Gerenciar Roles de Usuários\n \n- Gerenciar Openid Issuers\n \n- Gerenciar Upstream Templates\n \n- Gerenciar Portais\n \n- Visualizar API Health Status\n \n- Gerenciar Categorias de APIs\n \n- Gerenciar Especificações (API Specs)\n \nO Consumo das APIs estão disponíveis para testes e desenvolvimento no ambiente de SIT [Integration] e HLG [Homologation]. E produção para uso produtivo (Requer aprovação de acesso)\n \n## Como o API Management V1 funciona?\n \n- A plataforma é divida de forma geral entre gerenciamento de APIs Gateways, Catalogo de APIs e documentações e Consumo\n \n- O API Manager será parte da plataforma de API Management da Via Varejo, que possuirá como objetivo manter centralizado em uma única ferramenta a gestão de APIs da Via Varejo entre os APIs Gateways.\n \n- O Dev Portal será um portal com o objetivo de atender os desenvolvedores da Via, sendo eles parceiros ou colaboradores internos. De forma que todos possam consultar as documentações das APIs disponíveis para utilização no ambiente da Via Varejo.\n \n\n \nOu seja não é necessário acessar nenhum outro sistema para expor ou documentar uma API. \n \n## Consumindo esta API\n \nPara o consumo dessa API se faz necessário criar um APP, selecionar o API Product, o ambiente e as roles de acesso, conforme passos abaixo:\n \n1. Log on.\n \n2. Acesse a página Meus Aplicativos\n \n3. Criar um Aplicativo\n \n4. Digite o nome do aplicativo\n \n5. Digite a descrição do aplicativo\n \n6. Escolha o ambiente desejado que será consumido (Não utilize ambientes diferentes dos quais a aplicação que irá consumir está. Ex.: Aplicação em SIT consumindo PRD)\n \n7. Selecione o tipo da aplicação Daemon (Server-to-Server), quando o consumo da API for realizado por um outro serviço instalado em um servidor. Ou algum dos demais que aplicação se enquadrar. \n \n8. Selecione o API Product: API Management V1\n \n9. Selecione a role conforme a necessidade do aplicativo\n \nAs solicitações de acessos para ambientes produtivos serão avalidas se podem ser liberadas e se as roles selecionadas podem ser utilizadas. Portanto não selecione role a mais do que será utilizado pelo aplicativo.\n \n### Autenticação\n \nApós o APP ter sido criado e estar com o status de Ativo na página de meus APPs, as credenciais do mesmo poderá ser utilizada para o consumo das APIs listadas nessa documentação.  Se a aplicação for server-to-server será possível escolher entre authenticação por Api Key, Basic Auth ou OAuth 2. Caso seja qualquer outro tipo, apenas ficará disponível OAuth 2. \n \n#### OAuth 2\n \nPara a utilização da autenticação Oauth 2, será necessário gerar um Bearer Token antes de realizar a requisição para esta API.\n \n- Deverá ser realizada uma requisição POST no endereço: https://login.microsoftonline.com/apimanagementviavarejo.onmicrosoft.com/oauth2/v2.0/token\n \n- Com os parametros abaixo no Body no formato: x-www-form-urlencoded: \n \n- grant_type: client_credentials\n \n- client_id: (Client ID Gerado ao criar o APP no tópico anterior)\n \n- client_secret: (Client Secret Gerado ao criar o APP no tópico anterior)\n \n- scope: https://apimanagementviavarejo.onmicrosoft.com/apimanagement-v1/.default\n \n#### API Key\n \nPara autenticação por API Key basta enviar no header das requisições feitas o cabeçalho \"apiKey\" com o API Key gerado ao criar o APP. \n \n\n \n#### Basic Auth\n \nPara autenticação por Basic Auth basta enviar no header das requisições feitas o cabeçalho \"Authorization Bsic\" seguindo o padrão de codificação de autenticações basic auth, onde o usuário é o name do app criado e o password é a chave contida no campo Basic Auth, gerado ao criar o APP.\n \n### Roles\n \n| Roles | Permissões |\n \n| --- | :---: |\n \n| CONSUMER | Consumers podem visualizar o catálogo de APIs (API Products, Specs e API Resource) e Criar APPs |\n \n| PRODUCER      | Producers podem criar e editarem API Products, API Proxys e API Resources) |\n \n| ADMIN      | Possuem acesso de leitura e escrita em todas as APIs |\n \n| EDITOR                  | Podem editar documentações |\n \n| OPERADOR                  | Podem editar e atribuir planos e gerenciar APPs criados |\n \n| INTERNAL_USER  | Podem visualizar o catálogo de APIs marcadas como Internas |\n\n\n \n# Principais Resources\n \n\n \n## API Product\n \n\n \nUm API Product é um empacotamento de APIs em um Produto, de modo que entregue uma funcionalidade coesa e desejada, focada na experiência dos App Developers. Um API Product pode empacotar funcionalidades de varios serviços/microserviços, de forma que sua modelagem fique sempre voltada ao negócio e não a infraestrutura ou arquitetura utilizada. \n \n## API Spec\n \n\n \nÉ a documentação de uma API (API Product). A specificação OpenAPI v2 (Popularmente conhecida como Swagger) e OpenAPI v3 são utilizados para descrever as interfaces das APIs a serem implementadas. São artefatos aderentes à convenção Swagger/OpenAPI http://swagger.io. A versão suportada pelo DevPortal é a Versão 2 e 3. Preferenciamente é recomendado o uso da versão 3, por trazer novos recursos.\n \n\n \n## API Resource\n \n\n \nUm API Resource é um agrupamento de API Proxys, similar ao API Product, porem voltado a gestão e não ao consumo. \n \n\n \n## API Proxy\n \n\n \nUm API Proxy é uma camada para acesso ao backend no API Gateway, ele pode agregar funcionalidades permitindo que o backend se preocupe apenas com o negócio, como por exemplo habilitar cache a uma operação de uma API, limitar o tamanho de uma requisição, habitar autenticação, modificar o path, header ou payload de uma requisição, entre outras funcionalidades. \n \n\n \n## Category\n \n\n \nCategoria utilizada para classificação dos API Products disponíveis no catálogo. \n \n\n \n## Gateways\n \n\n \nO API Gateway atua como um front-end de API, recebe requisições, aplica políticas de limitação e segurança, passa as requisições para o serviço de back-end e, em seguida, devolve a resposta ao solicitante. Todos os API Proxys criados dependem de um gateway para ser feito a exposição. \n \n\n \n## Upstream Templates\n \n\n \nO Upstream template é um conjunto de políticas definidas pelos responsáveis pela governança de API, que delimita funcionalidades que um API Proxy pode ou não possuir.\n \n\n \n## Portal\n \n\n \nO Portal é um catalogo de APIs lógico, ou seja, é possível definir quais APIs serão listadas.\n \n\n \n## Plan \n \n\n \nO Plan define o limite de consumo que um APP poderá fazer em determinada API.\n \n\n \n## Openid Issuer\n \n\n \nO Openid Issuer é um emissor de token (geralmente um identity provider) confiavel, ou seja todos os tokens gerados pelo mesmo será valido para ser utilizado com Oauth2 em requisições de APIs.\n \n\n \n## Health Status\n \n\n \nExibe a saúde de uma API baseado nos status obtidos de health check. \n\n \n#### Request de exemplo para gerar token oauth2\n \n```shell\n \ncurl -X POST -k https://login.microsoftonline.com/apimanagementviavarejo.onmicrosoft.com/oauth2/v2.0/token \\\n \n-H 'Cache-Control: no-cache' \\\n \n-H 'Content-Type: application/x-www-form-urlencoded' \\\n \n-d 'grant_type=client_credentials&client_id={client_id_gerado_no_app}&client_secret={client_secret_gerado_no_app}&scope=https://apimanagementviavarejo.onmicrosoft.com/apimanagement-v1/.default'\n \n```\n \n#### Response de exemplo\n \n```json\n \n{\n \n \"access_token\": \"{seu_novo_access_token}\",\n \n  \"refresh_token\": \"{seu_novo_refresh_token}\",\n \n  \"token_type\": \"Bearer\",\n \n  \"expires_in\": 7193\n \n }\n \n```\n \nArmazene o `access_token` para acesso a API, e o `refresh_token` para renovar o access token (`access_token`) quando ele expirar.\n \n#### Requisição de exemplo usando o token OAuth2\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'Authorization: Bearer {seu_novo_access_token}' \n \n```\n \n\n \n#### Requisição de exemplo usando o API Key\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'apiKey: {sua api key gerada ao cadastrar o APP}'\n \n```\n \n\n \n#### Requisição de exemplo usando o Basic Auth\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'Authorization: Basic {Usuario e Senha gerado no APP no formato para Basic Auth}'\n \n```\n \n# Release Notes\n \n\n \n## Version 1.0\n \n- Versão inicial com os recursos listados no documento",
+  "slug": "suporte",
+  "title": "Suporte",
+  "__v": 1,
+  "published_at": {
+    "$date": "2021-03-16T22:30:33.209Z"
+  },
+  "hero": [
+    {
+      "_id": {
+        "$oid": "605a33597ed475001b1ed36d"
+      },
+      "kind": "ComponentSectionsHero",
+      "ref": {
+        "$oid": "605131855ff131427a9a8dd7"
+      }
+    }
+  ],
+  "sections": [],
+  "createdAt": {
+    "$date": "2021-03-16T22:30:29.733Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-23T18:28:41.767Z"
+  },
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal": {
+    "$oid": "604e9b4972a96c7ddfe94ec4"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "6051391b9239554f92464502"
+  },
+  "markdown": "# Visão Geral\nO API Management V1 é um conjunto de APIs que fornece suporte a controle das informações no API Manager e Dev Portal da Via Varejo. Utilizando as APIs disponíveis nesse documento é possível criar uma API para ser exposta no catálogo interno ou externo da Via Varejo, expor um serviço para ser consumidor por aplicações internas ou externas da Via Varejo, impor comportamentos, controle de acesso e restrições de uso a uma API que será gerenciada pela plataforma.\n \nUtiliza essas APIs para:\n \n- Gerenciar API Products\n \n- Gerenciar API Resources\n \n- Gerenciar API Proxies\n \n- Gerenciar Gateways\n \n- Gerenciar Planos (Plans)\n \n- Gerenciar Roles de Usuários\n \n- Gerenciar Openid Issuers\n \n- Gerenciar Upstream Templates\n \n- Gerenciar Portais\n \n- Visualizar API Health Status\n \n- Gerenciar Categorias de APIs\n \n- Gerenciar Especificações (API Specs)\n \nO Consumo das APIs estão disponíveis para testes e desenvolvimento no ambiente de SIT [Integration] e HLG [Homologation]. E produção para uso produtivo (Requer aprovação de acesso)\n \n## Como o API Management V1 funciona?\n \n- A plataforma é divida de forma geral entre gerenciamento de APIs Gateways, Catalogo de APIs e documentações e Consumo\n \n- O API Manager será parte da plataforma de API Management da Via Varejo, que possuirá como objetivo manter centralizado em uma única ferramenta a gestão de APIs da Via Varejo entre os APIs Gateways.\n \n- O Dev Portal será um portal com o objetivo de atender os desenvolvedores da Via, sendo eles parceiros ou colaboradores internos. De forma que todos possam consultar as documentações das APIs disponíveis para utilização no ambiente da Via Varejo.\n \n\n \nOu seja não é necessário acessar nenhum outro sistema para expor ou documentar uma API. \n \n## Consumindo esta API\n \nPara o consumo dessa API se faz necessário criar um APP, selecionar o API Product, o ambiente e as roles de acesso, conforme passos abaixo:\n \n1. Log on.\n \n2. Acesse a página Meus Aplicativos\n \n3. Criar um Aplicativo\n \n4. Digite o nome do aplicativo\n \n5. Digite a descrição do aplicativo\n \n6. Escolha o ambiente desejado que será consumido (Não utilize ambientes diferentes dos quais a aplicação que irá consumir está. Ex.: Aplicação em SIT consumindo PRD)\n \n7. Selecione o tipo da aplicação Daemon (Server-to-Server), quando o consumo da API for realizado por um outro serviço instalado em um servidor. Ou algum dos demais que aplicação se enquadrar. \n \n8. Selecione o API Product: API Management V1\n \n9. Selecione a role conforme a necessidade do aplicativo\n \nAs solicitações de acessos para ambientes produtivos serão avalidas se podem ser liberadas e se as roles selecionadas podem ser utilizadas. Portanto não selecione role a mais do que será utilizado pelo aplicativo.\n \n### Autenticação\n \nApós o APP ter sido criado e estar com o status de Ativo na página de meus APPs, as credenciais do mesmo poderá ser utilizada para o consumo das APIs listadas nessa documentação.  Se a aplicação for server-to-server será possível escolher entre authenticação por Api Key, Basic Auth ou OAuth 2. Caso seja qualquer outro tipo, apenas ficará disponível OAuth 2. \n \n#### OAuth 2\n \nPara a utilização da autenticação Oauth 2, será necessário gerar um Bearer Token antes de realizar a requisição para esta API.\n \n- Deverá ser realizada uma requisição POST no endereço: https://login.microsoftonline.com/apimanagementviavarejo.onmicrosoft.com/oauth2/v2.0/token\n \n- Com os parametros abaixo no Body no formato: x-www-form-urlencoded: \n \n- grant_type: client_credentials\n \n- client_id: (Client ID Gerado ao criar o APP no tópico anterior)\n \n- client_secret: (Client Secret Gerado ao criar o APP no tópico anterior)\n \n- scope: https://apimanagementviavarejo.onmicrosoft.com/apimanagement-v1/.default\n \n#### API Key\n \nPara autenticação por API Key basta enviar no header das requisições feitas o cabeçalho \"apiKey\" com o API Key gerado ao criar o APP. \n \n\n \n#### Basic Auth\n \nPara autenticação por Basic Auth basta enviar no header das requisições feitas o cabeçalho \"Authorization Bsic\" seguindo o padrão de codificação de autenticações basic auth, onde o usuário é o name do app criado e o password é a chave contida no campo Basic Auth, gerado ao criar o APP.\n \n### Roles\n \n| Roles | Permissões |\n \n| --- | :---: |\n \n| CONSUMER | Consumers podem visualizar o catálogo de APIs (API Products, Specs e API Resource) e Criar APPs |\n \n| PRODUCER      | Producers podem criar e editarem API Products, API Proxys e API Resources) |\n \n| ADMIN      | Possuem acesso de leitura e escrita em todas as APIs |\n \n| EDITOR                  | Podem editar documentações |\n \n| OPERADOR                  | Podem editar e atribuir planos e gerenciar APPs criados |\n \n| INTERNAL_USER  | Podem visualizar o catálogo de APIs marcadas como Internas |\n\n\n \n# Principais Resources\n \n\n \n## API Product\n \n\n \nUm API Product é um empacotamento de APIs em um Produto, de modo que entregue uma funcionalidade coesa e desejada, focada na experiência dos App Developers. Um API Product pode empacotar funcionalidades de varios serviços/microserviços, de forma que sua modelagem fique sempre voltada ao negócio e não a infraestrutura ou arquitetura utilizada. \n \n## API Spec\n \n\n \nÉ a documentação de uma API (API Product). A specificação OpenAPI v2 (Popularmente conhecida como Swagger) e OpenAPI v3 são utilizados para descrever as interfaces das APIs a serem implementadas. São artefatos aderentes à convenção Swagger/OpenAPI http://swagger.io. A versão suportada pelo DevPortal é a Versão 2 e 3. Preferenciamente é recomendado o uso da versão 3, por trazer novos recursos.\n \n\n \n## API Resource\n \n\n \nUm API Resource é um agrupamento de API Proxys, similar ao API Product, porem voltado a gestão e não ao consumo. \n \n\n \n## API Proxy\n \n\n \nUm API Proxy é uma camada para acesso ao backend no API Gateway, ele pode agregar funcionalidades permitindo que o backend se preocupe apenas com o negócio, como por exemplo habilitar cache a uma operação de uma API, limitar o tamanho de uma requisição, habitar autenticação, modificar o path, header ou payload de uma requisição, entre outras funcionalidades. \n \n\n \n## Category\n \n\n \nCategoria utilizada para classificação dos API Products disponíveis no catálogo. \n \n\n \n## Gateways\n \n\n \nO API Gateway atua como um front-end de API, recebe requisições, aplica políticas de limitação e segurança, passa as requisições para o serviço de back-end e, em seguida, devolve a resposta ao solicitante. Todos os API Proxys criados dependem de um gateway para ser feito a exposição. \n \n\n \n## Upstream Templates\n \n\n \nO Upstream template é um conjunto de políticas definidas pelos responsáveis pela governança de API, que delimita funcionalidades que um API Proxy pode ou não possuir.\n \n\n \n## Portal\n \n\n \nO Portal é um catalogo de APIs lógico, ou seja, é possível definir quais APIs serão listadas.\n \n\n \n## Plan \n \n\n \nO Plan define o limite de consumo que um APP poderá fazer em determinada API.\n \n\n \n## Openid Issuer\n \n\n \nO Openid Issuer é um emissor de token (geralmente um identity provider) confiavel, ou seja todos os tokens gerados pelo mesmo será valido para ser utilizado com Oauth2 em requisições de APIs.\n \n\n \n## Health Status\n \n\n \nExibe a saúde de uma API baseado nos status obtidos de health check. \n\n \n#### Request de exemplo para gerar token oauth2\n \n```shell\n \ncurl -X POST -k https://login.microsoftonline.com/apimanagementviavarejo.onmicrosoft.com/oauth2/v2.0/token \\\n \n-H 'Cache-Control: no-cache' \\\n \n-H 'Content-Type: application/x-www-form-urlencoded' \\\n \n-d 'grant_type=client_credentials&client_id={client_id_gerado_no_app}&client_secret={client_secret_gerado_no_app}&scope=https://apimanagementviavarejo.onmicrosoft.com/apimanagement-v1/.default'\n \n```\n \n#### Response de exemplo\n \n```json\n \n{\n \n \"access_token\": \"{seu_novo_access_token}\",\n \n  \"refresh_token\": \"{seu_novo_refresh_token}\",\n \n  \"token_type\": \"Bearer\",\n \n  \"expires_in\": 7193\n \n }\n \n```\n \nArmazene o `access_token` para acesso a API, e o `refresh_token` para renovar o access token (`access_token`) quando ele expirar.\n \n#### Requisição de exemplo usando o token OAuth2\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'Authorization: Bearer {seu_novo_access_token}' \n \n```\n \n\n \n#### Requisição de exemplo usando o API Key\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'apiKey: {sua api key gerada ao cadastrar o APP}'\n \n```\n \n\n \n#### Requisição de exemplo usando o Basic Auth\n \n```shell\n \ncurl -X GET -k https://api-hlg.viavarejo.com.br/it-management/v1/categories \\\n \n-H 'Authorization: Basic {Usuario e Senha gerado no APP no formato para Basic Auth}'\n \n```\n \n# Release Notes\n \n\n \n## Version 1.0\n \n- Versão inicial com os recursos listados no documento",
+  "slug": "ajuda",
+  "title": "Ajuda",
+  "__v": 1,
+  "published_at": {
+    "$date": "2021-03-16T23:02:57.526Z"
+  },
+  "hero": [
+    {
+      "_id": {
+        "$oid": "60637ecd7ed475001b1ed3af"
+      },
+      "kind": "ComponentSectionsHero",
+      "ref": {
+        "$oid": "6051391b9239554f92464503"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "_id": {
+        "$oid": "60737fce6b3e24001c9013ee"
+      },
+      "kind": "ComponentSectionsSingleFeatureSection",
+      "ref": {
+        "$oid": "605139b79239554f92464514"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60737fce6b3e24001c9013ef"
+      },
+      "kind": "ComponentSectionsMarkdown",
+      "ref": {
+        "$oid": "60737fce6b3e24001c9013ea"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-03-16T23:02:51.546Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-11T23:01:34.158Z"
+  },
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal": {
+    "$oid": "604e9b4972a96c7ddfe94ec4"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+}]

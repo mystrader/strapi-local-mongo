@@ -1,0 +1,2991 @@
+[{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf4"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf5"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "count",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf6"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf7"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf8"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf9"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddfa"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddfb"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "find",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddfc"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddfd"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "findone",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddfe"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddff"
+  },
+  "type": "application",
+  "controller": "portal-catalog",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde00"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde01"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "count",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde02"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde03"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde04"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde05"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde06"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde07"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "find",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde08"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde09"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "findone",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde0a"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde0b"
+  },
+  "type": "application",
+  "controller": "portal-home",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde0c"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde0d"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "count",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde0e"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde0f"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde10"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde11"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde12"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde13"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "find",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde14"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde15"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "findone",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde16"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde17"
+  },
+  "type": "application",
+  "controller": "portal-menu",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde18"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde19"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "count",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde1a"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde1b"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde1c"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde1d"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde1e"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde1f"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "find",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde20"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde21"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "findone",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde22"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde23"
+  },
+  "type": "application",
+  "controller": "portal-page",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde24"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde25"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "count",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde26"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde27"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde28"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde29"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde2a"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde2b"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "find",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde2c"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde2d"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "findone",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde2e"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde2f"
+  },
+  "type": "application",
+  "controller": "portal-theme",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde30"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde31"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "count",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde32"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde33"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde34"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde35"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde36"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde37"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "find",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde38"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde39"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "findone",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde3a"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde3b"
+  },
+  "type": "application",
+  "controller": "portal",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde3c"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "bulkdelete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde3d"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "bulkdelete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde3e"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde3f"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde40"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde41"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde42"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde43"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde44"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde45"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde46"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "previewmanyrelations",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde47"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "previewmanyrelations",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde48"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "publish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde49"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "publish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde4a"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "unpublish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde4b"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "unpublish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde4c"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde4d"
+  },
+  "type": "content-manager",
+  "controller": "collection-types",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde4e"
+  },
+  "type": "content-manager",
+  "controller": "components",
+  "action": "findcomponentconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde4f"
+  },
+  "type": "content-manager",
+  "controller": "components",
+  "action": "findcomponentconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde50"
+  },
+  "type": "content-manager",
+  "controller": "components",
+  "action": "findcomponents",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde51"
+  },
+  "type": "content-manager",
+  "controller": "components",
+  "action": "findcomponents",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde52"
+  },
+  "type": "content-manager",
+  "controller": "components",
+  "action": "updatecomponentconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde53"
+  },
+  "type": "content-manager",
+  "controller": "components",
+  "action": "updatecomponentconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde54"
+  },
+  "type": "content-manager",
+  "controller": "content-types",
+  "action": "findcontenttypeconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde55"
+  },
+  "type": "content-manager",
+  "controller": "content-types",
+  "action": "findcontenttypeconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde56"
+  },
+  "type": "content-manager",
+  "controller": "content-types",
+  "action": "findcontenttypes",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde57"
+  },
+  "type": "content-manager",
+  "controller": "content-types",
+  "action": "findcontenttypes",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde58"
+  },
+  "type": "content-manager",
+  "controller": "content-types",
+  "action": "updatecontenttypeconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde59"
+  },
+  "type": "content-manager",
+  "controller": "content-types",
+  "action": "updatecontenttypeconfiguration",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde5a"
+  },
+  "type": "content-manager",
+  "controller": "relations",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde5b"
+  },
+  "type": "content-manager",
+  "controller": "relations",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde5c"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "createorupdate",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde5d"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "createorupdate",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde5e"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde5f"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "delete",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde60"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde61"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde62"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "publish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde63"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "publish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde64"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "unpublish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde65"
+  },
+  "type": "content-manager",
+  "controller": "single-types",
+  "action": "unpublish",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde66"
+  },
+  "type": "content-manager",
+  "controller": "uid",
+  "action": "checkuidavailability",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde67"
+  },
+  "type": "content-manager",
+  "controller": "uid",
+  "action": "checkuidavailability",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde68"
+  },
+  "type": "content-manager",
+  "controller": "uid",
+  "action": "generateuid",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde69"
+  },
+  "type": "content-manager",
+  "controller": "uid",
+  "action": "generateuid",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde6a"
+  },
+  "type": "content-type-builder",
+  "controller": "builder",
+  "action": "getreservednames",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde6b"
+  },
+  "type": "content-type-builder",
+  "controller": "builder",
+  "action": "getreservednames",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde6c"
+  },
+  "type": "content-type-builder",
+  "controller": "componentcategories",
+  "action": "deletecategory",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde6d"
+  },
+  "type": "content-type-builder",
+  "controller": "componentcategories",
+  "action": "deletecategory",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde6e"
+  },
+  "type": "content-type-builder",
+  "controller": "componentcategories",
+  "action": "editcategory",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde6f"
+  },
+  "type": "content-type-builder",
+  "controller": "componentcategories",
+  "action": "editcategory",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde70"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "createcomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde71"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "createcomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde72"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "deletecomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde73"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "deletecomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde74"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "getcomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde75"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "getcomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde76"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "getcomponents",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde77"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "getcomponents",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde78"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "updatecomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde79"
+  },
+  "type": "content-type-builder",
+  "controller": "components",
+  "action": "updatecomponent",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde7a"
+  },
+  "type": "content-type-builder",
+  "controller": "connections",
+  "action": "getconnections",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde7b"
+  },
+  "type": "content-type-builder",
+  "controller": "connections",
+  "action": "getconnections",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde7c"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "createcontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde7d"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "createcontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde7e"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "deletecontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde7f"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "deletecontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde80"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "getcontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde81"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "getcontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde82"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "getcontenttypes",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde83"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "getcontenttypes",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde84"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "updatecontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde85"
+  },
+  "type": "content-type-builder",
+  "controller": "contenttypes",
+  "action": "updatecontenttype",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde86"
+  },
+  "type": "email",
+  "controller": "email",
+  "action": "getsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde87"
+  },
+  "type": "email",
+  "controller": "email",
+  "action": "getsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde88"
+  },
+  "type": "email",
+  "controller": "email",
+  "action": "send",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde89"
+  },
+  "type": "email",
+  "controller": "email",
+  "action": "send",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde8a"
+  },
+  "type": "email",
+  "controller": "email",
+  "action": "test",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde8b"
+  },
+  "type": "email",
+  "controller": "email",
+  "action": "test",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde8c"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde8d"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde8e"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "destroy",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde8f"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "destroy",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde90"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde91"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde92"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde93"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde94"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "getsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde95"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "getsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde96"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "search",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde97"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "search",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde98"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "updatesettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde99"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "updatesettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde9a"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "upload",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde9b"
+  },
+  "type": "upload",
+  "controller": "upload",
+  "action": "upload",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde9c"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "callback",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde9d"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "callback",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde9e"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "connect",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cde9f"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "connect",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea0"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "emailconfirmation",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea1"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "emailconfirmation",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea2"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "forgotpassword",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea3"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "forgotpassword",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea4"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "register",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea5"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "register",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea6"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "resetpassword",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea7"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "resetpassword",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea8"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "sendemailconfirmation",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdea9"
+  },
+  "type": "users-permissions",
+  "controller": "auth",
+  "action": "sendemailconfirmation",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeaa"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeab"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "count",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeac"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdead"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "create",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeae"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "destroy",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeaf"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "destroy",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb1"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "destroyall",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb0"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "destroyall",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb3"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb2"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "find",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb5"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb4"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "findone",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb6"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "me",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb7"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "me",
+  "enabled": true,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb8"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeb9"
+  },
+  "type": "users-permissions",
+  "controller": "user",
+  "action": "update",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeba"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "createrole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdebb"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "createrole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdebc"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "deleterole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdebd"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "deleterole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdebe"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getadvancedsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdebf"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getadvancedsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec0"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getemailtemplate",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec1"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getemailtemplate",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec2"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getpermissions",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec3"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getpermissions",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec4"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getpolicies",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec5"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getpolicies",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec6"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getproviders",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec7"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getproviders",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec8"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getrole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdec9"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getrole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdeca"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getroles",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdecb"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getroles",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdecc"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getroutes",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdecd"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "getroutes",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdece"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "index",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdecf"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "index",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded0"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "searchusers",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded1"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "searchusers",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded2"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updateadvancedsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded3"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updateadvancedsettings",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded4"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updateemailtemplate",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded5"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updateemailtemplate",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded6"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updateproviders",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded7"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updateproviders",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded8"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updaterole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf2"
+  }
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cded9"
+  },
+  "type": "users-permissions",
+  "controller": "userspermissions",
+  "action": "updaterole",
+  "enabled": false,
+  "policy": "",
+  "__v": 0,
+  "role": {
+    "$oid": "6054a660b21343001c7cddf3"
+  }
+}]

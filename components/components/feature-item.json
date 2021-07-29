@@ -18,6 +18,9 @@
     "backgroundColor": {
       "type": "string"
     },
+    "backgroundColorItem": {
+      "type": "string"
+    },
     "textColor": {
       "type": "string"
     },

@@ -1,0 +1,145 @@
+[{
+  "_id": {
+    "$oid": "604ba448a614851b9d28d036"
+  },
+  "type": "light",
+  "primary": [
+    {
+      "_id": {
+        "$oid": "604bad22c8e1f12d36ae46ae"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604bad22c8e1f12d36ae46ad"
+      }
+    }
+  ],
+  "secondary": [
+    {
+      "_id": {
+        "$oid": "604bad22c8e1f12d36ae46b0"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604bad22c8e1f12d36ae46af"
+      }
+    }
+  ],
+  "success": [
+    {
+      "_id": {
+        "$oid": "604bad22c8e1f12d36ae46b2"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604bad22c8e1f12d36ae46b1"
+      }
+    }
+  ],
+  "error": [
+    {
+      "_id": {
+        "$oid": "604bad22c8e1f12d36ae46b4"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604bad22c8e1f12d36ae46b3"
+      }
+    }
+  ],
+  "warning": [
+    {
+      "_id": {
+        "$oid": "604bad22c8e1f12d36ae46b6"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604bad22c8e1f12d36ae46b5"
+      }
+    }
+  ],
+  "info": [
+    {
+      "_id": {
+        "$oid": "604bad22c8e1f12d36ae46b8"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604bad22c8e1f12d36ae46b7"
+      }
+    }
+  ],
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eec7"
+  },
+  "type": "light",
+  "primary": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d14"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eec8"
+      }
+    }
+  ],
+  "secondary": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d15"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eeca"
+      }
+    }
+  ],
+  "success": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d16"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eecc"
+      }
+    }
+  ],
+  "error": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d17"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eece"
+      }
+    }
+  ],
+  "warning": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d18"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eed0"
+      }
+    }
+  ],
+  "info": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d19"
+      },
+      "kind": "ComponentThemePaletteColor",
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eed2"
+      }
+    }
+  ],
+  "__v": 6
+}]

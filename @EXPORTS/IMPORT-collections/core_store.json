@@ -1,0 +1,1055 @@
+[{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd6004c"
+  },
+  "key": "model_def_components.feature-item",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"components.feature-item\",\"collectionName\":\"components_components_feature_items\",\"info\":{\"name\":\"FeatureItem\",\"icon\":\"adjust\"},\"options\":{\"timestamps\":false},\"attributes\":{\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"href\":{\"type\":\"string\"},\"backgroundColor\":{\"type\":\"string\"},\"textColor\":{\"type\":\"string\"},\"image\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd6004e"
+  },
+  "key": "model_def_application::portal-catalog.portal-catalog",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-catalog.portal-catalog\",\"collectionName\":\"portal_catalogs\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalCatalog\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_catalog\"},\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60050"
+  },
+  "key": "model_def_strapi::permission",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::permission\",\"collectionName\":\"strapi_permission\",\"kind\":\"collectionType\",\"info\":{\"name\":\"Permission\",\"description\":\"\"},\"options\":{\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"action\":{\"type\":\"string\",\"minLength\":1,\"configurable\":false,\"required\":true},\"subject\":{\"type\":\"string\",\"minLength\":1,\"configurable\":false,\"required\":false},\"fields\":{\"type\":\"json\",\"configurable\":false,\"required\":false,\"default\":[]},\"conditions\":{\"type\":\"json\",\"configurable\":false,\"required\":false,\"default\":[]},\"role\":{\"configurable\":false,\"model\":\"role\",\"plugin\":\"admin\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60052"
+  },
+  "key": "model_def_plugins::users-permissions.permission",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::users-permissions.permission\",\"collectionName\":\"users-permissions_permission\",\"kind\":\"collectionType\",\"info\":{\"name\":\"permission\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"type\":{\"type\":\"string\",\"required\":true,\"configurable\":false},\"controller\":{\"type\":\"string\",\"required\":true,\"configurable\":false},\"action\":{\"type\":\"string\",\"required\":true,\"configurable\":false},\"enabled\":{\"type\":\"boolean\",\"required\":true,\"configurable\":false},\"policy\":{\"type\":\"string\",\"configurable\":false},\"role\":{\"model\":\"role\",\"via\":\"permissions\",\"plugin\":\"users-permissions\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60054"
+  },
+  "key": "model_def_plugins::upload.file",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::upload.file\",\"collectionName\":\"upload_file\",\"kind\":\"collectionType\",\"info\":{\"name\":\"file\",\"description\":\"\"},\"options\":{\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"name\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"alternativeText\":{\"type\":\"string\",\"configurable\":false},\"caption\":{\"type\":\"string\",\"configurable\":false},\"width\":{\"type\":\"integer\",\"configurable\":false},\"height\":{\"type\":\"integer\",\"configurable\":false},\"formats\":{\"type\":\"json\",\"configurable\":false},\"hash\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"ext\":{\"type\":\"string\",\"configurable\":false},\"mime\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"size\":{\"type\":\"decimal\",\"configurable\":false,\"required\":true},\"url\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"previewUrl\":{\"type\":\"string\",\"configurable\":false},\"provider\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"provider_metadata\":{\"type\":\"json\",\"configurable\":false},\"related\":{\"collection\":\"*\",\"filter\":\"field\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60061"
+  },
+  "key": "model_def_elements.button",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"elements.button\",\"collectionName\":\"components_elements_buttons\",\"info\":{\"name\":\"Button\",\"icon\":\"hand-pointer\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"text\":{\"type\":\"string\"},\"icon\":{\"type\":\"string\"},\"href\":{\"type\":\"string\"},\"size\":{\"type\":\"enumeration\",\"enum\":[\"large\",\"medium\",\"small\"]},\"color\":{\"type\":\"enumeration\",\"enum\":[\"default\",\"inherit\",\"primary\",\"secondary\"]},\"variant\":{\"type\":\"enumeration\",\"enum\":[\"contained\",\"outlined\",\"text\"]}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60063"
+  },
+  "key": "model_def_application::portal-home.portal-home",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-home.portal-home\",\"collectionName\":\"portal_homes\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalHome\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_home\"},\"sections\":{\"type\":\"dynamiczone\",\"components\":[\"sections.multiple-features-section\",\"sections.single-feature-section\",\"sections.markdown\",\"sections.hero\"]},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60065"
+  },
+  "key": "model_def_strapi::role",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::role\",\"collectionName\":\"strapi_role\",\"kind\":\"collectionType\",\"info\":{\"name\":\"Role\",\"description\":\"\"},\"options\":{\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"name\":{\"type\":\"string\",\"minLength\":1,\"unique\":true,\"configurable\":false,\"required\":true},\"code\":{\"type\":\"string\",\"minLength\":1,\"unique\":true,\"configurable\":false,\"required\":true},\"description\":{\"type\":\"string\",\"configurable\":false},\"users\":{\"configurable\":false,\"collection\":\"user\",\"via\":\"roles\",\"plugin\":\"admin\",\"isVirtual\":true},\"permissions\":{\"configurable\":false,\"plugin\":\"admin\",\"collection\":\"permission\",\"via\":\"role\",\"isVirtual\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60068"
+  },
+  "key": "model_def_plugins::users-permissions.role",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::users-permissions.role\",\"collectionName\":\"users-permissions_role\",\"kind\":\"collectionType\",\"info\":{\"name\":\"role\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"name\":{\"type\":\"string\",\"minLength\":3,\"required\":true,\"configurable\":false},\"description\":{\"type\":\"string\",\"configurable\":false},\"type\":{\"type\":\"string\",\"unique\":true,\"configurable\":false},\"permissions\":{\"collection\":\"permission\",\"via\":\"role\",\"plugin\":\"users-permissions\",\"configurable\":false,\"isVirtual\":true},\"users\":{\"collection\":\"user\",\"via\":\"role\",\"configurable\":false,\"plugin\":\"users-permissions\",\"isVirtual\":true},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60072"
+  },
+  "key": "model_def_elements.container",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"elements.container\",\"collectionName\":\"components_elements_sections\",\"info\":{\"name\":\"Section\",\"icon\":\"address-card\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"backgroundColor\":{\"type\":\"string\"},\"textColor\":{\"type\":\"string\"},\"backgroundImage\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60074"
+  },
+  "key": "model_def_application::portal-menu.portal-menu",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-menu.portal-menu\",\"collectionName\":\"portal_menus\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalMenu\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_menu\"},\"items\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.menu-item\"},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60076"
+  },
+  "key": "model_def_strapi::user",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::user\",\"collectionName\":\"strapi_administrator\",\"kind\":\"collectionType\",\"info\":{\"name\":\"User\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"firstname\":{\"type\":\"string\",\"unique\":false,\"minLength\":1,\"configurable\":false,\"required\":false},\"lastname\":{\"type\":\"string\",\"unique\":false,\"minLength\":1,\"configurable\":false,\"required\":false},\"username\":{\"type\":\"string\",\"unique\":false,\"configurable\":false,\"required\":false},\"email\":{\"type\":\"email\",\"minLength\":6,\"configurable\":false,\"required\":true,\"unique\":true,\"private\":true},\"password\":{\"type\":\"password\",\"minLength\":6,\"configurable\":false,\"required\":false,\"private\":true},\"resetPasswordToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"registrationToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"isActive\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false,\"private\":true},\"roles\":{\"collection\":\"role\",\"collectionName\":\"strapi_users_roles\",\"via\":\"users\",\"dominant\":true,\"plugin\":\"admin\",\"configurable\":false,\"private\":true},\"blocked\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60078"
+  },
+  "key": "model_def_plugins::users-permissions.user",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::users-permissions.user\",\"collectionName\":\"users-permissions_user\",\"kind\":\"collectionType\",\"info\":{\"name\":\"user\",\"description\":\"\"},\"options\":{\"draftAndPublish\":false,\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"username\":{\"type\":\"string\",\"minLength\":3,\"unique\":true,\"configurable\":false,\"required\":true},\"email\":{\"type\":\"email\",\"minLength\":6,\"configurable\":false,\"required\":true},\"provider\":{\"type\":\"string\",\"configurable\":false},\"password\":{\"type\":\"password\",\"minLength\":6,\"configurable\":false,\"private\":true},\"resetPasswordToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"confirmationToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"confirmed\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false},\"blocked\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false},\"role\":{\"model\":\"role\",\"via\":\"users\",\"plugin\":\"users-permissions\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60080"
+  },
+  "key": "model_def_elements.menu-item",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"elements.menu-item\",\"collectionName\":\"components_elements_menu_items\",\"info\":{\"name\":\"MenuItem\",\"icon\":\"sitemap\"},\"options\":{\"timestamps\":false},\"attributes\":{\"label\":{\"type\":\"string\"},\"href\":{\"type\":\"string\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60082"
+  },
+  "key": "model_def_application::portal-page.portal-page",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-page.portal-page\",\"collectionName\":\"portal_pages\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalPage\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"model\":\"portal\",\"via\":\"portal_pages\"},\"title\":{\"type\":\"string\"},\"slug\":{\"type\":\"string\"},\"sections\":{\"type\":\"dynamiczone\",\"components\":[\"sections.multiple-features-section\",\"sections.single-feature-section\",\"sections.markdown\",\"sections.hero\"]},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60088"
+  },
+  "key": "model_def_sections.hero",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"sections.hero\",\"collectionName\":\"components_sections_heroes\",\"info\":{\"name\":\"Hero\",\"icon\":\"air-freshener\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"image\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd6008a"
+  },
+  "key": "model_def_application::portal-theme.portal-theme",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-theme.portal-theme\",\"collectionName\":\"portal_themes\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalTheme\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_theme\"},\"palette\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette\"},\"logo\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60090"
+  },
+  "key": "model_def_sections.multiple-features-section",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"sections.multiple-features-section\",\"collectionName\":\"components_sections_multiple_features_sections\",\"info\":{\"name\":\"MultipleFeaturesSection\",\"icon\":\"align-center\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"features\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"components.feature-item\"},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd60092"
+  },
+  "key": "model_def_application::portal.portal",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal.portal\",\"collectionName\":\"portals\",\"kind\":\"collectionType\",\"info\":{\"name\":\"Portal\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"name\":{\"type\":\"string\"},\"portal_home\":{\"via\":\"portal\",\"model\":\"portal-home\"},\"portal_theme\":{\"via\":\"portal\",\"model\":\"portal-theme\"},\"portal_catalog\":{\"via\":\"portal\",\"model\":\"portal-catalog\"},\"portal_pages\":{\"via\":\"portal\",\"collection\":\"portal-page\",\"isVirtual\":true},\"portal_menu\":{\"via\":\"portal\",\"model\":\"portal-menu\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd6009a"
+  },
+  "key": "model_def_sections.single-feature-section",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"sections.single-feature-section\",\"collectionName\":\"components_sections_single_feature_sections\",\"info\":{\"name\":\"SingleFeatureSection\",\"icon\":\"apple-alt\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"image\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd6009c"
+  },
+  "key": "model_def_strapi::core-store",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::core-store\",\"collectionName\":\"core_store\",\"info\":{\"name\":\"core_store\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"key\":{\"type\":\"string\"},\"value\":{\"type\":\"text\"},\"type\":{\"type\":\"string\"},\"environment\":{\"type\":\"string\"},\"tag\":{\"type\":\"string\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd600a3"
+  },
+  "key": "model_def_theme.palette-color",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"theme.palette-color\",\"collectionName\":\"components_theme_palette_colors\",\"info\":{\"name\":\"PaletteColor\",\"icon\":\"paint-roller\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"light\":{\"type\":\"string\"},\"main\":{\"type\":\"string\",\"required\":true},\"dark\":{\"type\":\"string\"},\"contrastText\":{\"type\":\"string\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd600a5"
+  },
+  "key": "model_def_strapi::webhooks",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::webhooks\",\"collectionName\":\"strapi_webhooks\",\"info\":{\"name\":\"Strapi webhooks\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"name\":{\"type\":\"string\"},\"url\":{\"type\":\"text\"},\"headers\":{\"type\":\"json\"},\"events\":{\"type\":\"json\"},\"enabled\":{\"type\":\"boolean\"}}}"
+},{
+  "_id": {
+    "$oid": "6054a65f021dfbc3bcd600a9"
+  },
+  "key": "model_def_theme.palette",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"theme.palette\",\"collectionName\":\"components_theme_palettes\",\"info\":{\"name\":\"Palette\",\"icon\":\"layer-group\"},\"options\":{\"timestamps\":false},\"attributes\":{\"primary\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"secondary\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"success\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"error\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"warning\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"info\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"type\":{\"type\":\"enumeration\",\"enum\":[\"light\",\"dark\"]}}}"
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddd8"
+  },
+  "key": "plugin_upload_settings",
+  "environment": ":production",
+  "tag": "",
+  "value": "{\"sizeOptimization\":true,\"responsiveDimensions\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddd9"
+  },
+  "key": "plugin_users-permissions_grant",
+  "environment": "",
+  "tag": "",
+  "value": "{\"email\":{\"enabled\":true,\"icon\":\"envelope\"},\"discord\":{\"enabled\":false,\"icon\":\"discord\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/discord/callback\",\"scope\":[\"identify\",\"email\"]},\"facebook\":{\"enabled\":false,\"icon\":\"facebook-square\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/facebook/callback\",\"scope\":[\"email\"]},\"google\":{\"enabled\":false,\"icon\":\"google\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/google/callback\",\"scope\":[\"email\"]},\"github\":{\"enabled\":false,\"icon\":\"github\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/github/callback\",\"scope\":[\"user\",\"user:email\"]},\"microsoft\":{\"enabled\":false,\"icon\":\"windows\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/microsoft/callback\",\"scope\":[\"user.read\"]},\"twitter\":{\"enabled\":false,\"icon\":\"twitter\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/twitter/callback\"},\"instagram\":{\"enabled\":false,\"icon\":\"instagram\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/instagram/callback\",\"scope\":[\"user_profile\"]},\"vk\":{\"enabled\":false,\"icon\":\"vk\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/vk/callback\",\"scope\":[\"email\"]},\"twitch\":{\"enabled\":false,\"icon\":\"twitch\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/twitch/callback\",\"scope\":[\"user:read:email\"]},\"linkedin\":{\"enabled\":false,\"icon\":\"linkedin\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/linkedin/callback\",\"scope\":[\"r_liteprofile\",\"r_emailaddress\"]},\"cognito\":{\"enabled\":false,\"icon\":\"aws\",\"key\":\"\",\"secret\":\"\",\"subdomain\":\"my.subdomain.com\",\"callback\":\"/auth/cognito/callback\",\"scope\":[\"email\",\"openid\",\"profile\"]},\"reddit\":{\"enabled\":false,\"icon\":\"reddit\",\"key\":\"\",\"secret\":\"\",\"state\":true,\"callback\":\"/auth/reddit/callback\",\"scope\":[\"identity\"]},\"auth0\":{\"enabled\":false,\"icon\":\"\",\"key\":\"\",\"secret\":\"\",\"subdomain\":\"my-tenant.eu\",\"callback\":\"/auth/auth0/callback\",\"scope\":[\"openid\",\"email\",\"profile\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddda"
+  },
+  "key": "plugin_content_manager_configuration_components::elements.container",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"elements.container\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"backgroundColor\",\"defaultSortBy\":\"backgroundColor\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"backgroundColor\":{\"edit\":{\"label\":\"BackgroundColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"BackgroundColor\",\"searchable\":true,\"sortable\":true}},\"textColor\":{\"edit\":{\"label\":\"TextColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"TextColor\",\"searchable\":true,\"sortable\":true}},\"backgroundImage\":{\"edit\":{\"label\":\"BackgroundImage\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"BackgroundImage\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"backgroundColor\",\"textColor\",\"backgroundImage\"],\"edit\":[[{\"name\":\"backgroundColor\",\"size\":6},{\"name\":\"textColor\",\"size\":6}],[{\"name\":\"backgroundImage\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdddb"
+  },
+  "key": "plugin_content_manager_configuration_components::components.feature-item",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"components.feature-item\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"href\":{\"edit\":{\"label\":\"Href\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Href\",\"searchable\":true,\"sortable\":true}},\"backgroundColor\":{\"edit\":{\"label\":\"BackgroundColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"BackgroundColor\",\"searchable\":true,\"sortable\":true}},\"textColor\":{\"edit\":{\"label\":\"TextColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"TextColor\",\"searchable\":true,\"sortable\":true}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\",\"href\"],\"edit\":[[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"href\",\"size\":6},{\"name\":\"backgroundColor\",\"size\":6}],[{\"name\":\"textColor\",\"size\":6},{\"name\":\"image\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdddc"
+  },
+  "key": "plugin_content_manager_configuration_components::elements.button",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"elements.button\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"text\",\"defaultSortBy\":\"text\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"text\":{\"edit\":{\"label\":\"Text\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Text\",\"searchable\":true,\"sortable\":true}},\"icon\":{\"edit\":{\"label\":\"Icon\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Icon\",\"searchable\":true,\"sortable\":true}},\"href\":{\"edit\":{\"label\":\"Href\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Href\",\"searchable\":true,\"sortable\":true}},\"size\":{\"edit\":{\"label\":\"Size\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Size\",\"searchable\":true,\"sortable\":true}},\"color\":{\"edit\":{\"label\":\"Color\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Color\",\"searchable\":true,\"sortable\":true}},\"variant\":{\"edit\":{\"label\":\"Variant\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Variant\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"text\",\"icon\",\"href\"],\"edit\":[[{\"name\":\"text\",\"size\":6},{\"name\":\"icon\",\"size\":6}],[{\"name\":\"href\",\"size\":6},{\"name\":\"size\",\"size\":6}],[{\"name\":\"color\",\"size\":6},{\"name\":\"variant\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdddd"
+  },
+  "key": "plugin_content_manager_configuration_components::sections.multiple-features-section",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"sections.multiple-features-section\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"features\":{\"edit\":{\"label\":\"Features\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Features\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\"],\"edit\":[[{\"name\":\"section\",\"size\":12}],[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"features\",\"size\":12}],[{\"name\":\"buttons\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddde"
+  },
+  "key": "plugin_content_manager_configuration_components::sections.single-feature-section",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"sections.single-feature-section\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\",\"image\"],\"edit\":[[{\"name\":\"section\",\"size\":12}],[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"image\",\"size\":6}],[{\"name\":\"buttons\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdddf"
+  },
+  "key": "plugin_content_manager_configuration_components::theme.palette-color",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"theme.palette-color\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"light\",\"defaultSortBy\":\"light\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"light\":{\"edit\":{\"label\":\"Light\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Light\",\"searchable\":true,\"sortable\":true}},\"main\":{\"edit\":{\"label\":\"Main\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Main\",\"searchable\":true,\"sortable\":true}},\"dark\":{\"edit\":{\"label\":\"Dark\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Dark\",\"searchable\":true,\"sortable\":true}},\"contrastText\":{\"edit\":{\"label\":\"ContrastText\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"ContrastText\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"light\",\"main\",\"dark\"],\"edit\":[[{\"name\":\"light\",\"size\":6},{\"name\":\"main\",\"size\":6}],[{\"name\":\"dark\",\"size\":6},{\"name\":\"contrastText\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde0"
+  },
+  "key": "plugin_content_manager_configuration_components::elements.menu-item",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"elements.menu-item\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"label\",\"defaultSortBy\":\"label\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"label\":{\"edit\":{\"label\":\"Label\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Label\",\"searchable\":true,\"sortable\":true}},\"href\":{\"edit\":{\"label\":\"Href\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Href\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"label\",\"href\"],\"edit\":[[{\"name\":\"label\",\"size\":6},{\"name\":\"href\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde1"
+  },
+  "key": "plugin_content_manager_configuration_components::sections.hero",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"sections.hero\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\",\"image\"],\"edit\":[[{\"name\":\"section\",\"size\":12}],[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"image\",\"size\":6}],[{\"name\":\"buttons\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde2"
+  },
+  "key": "plugin_content_manager_configuration_components::theme.palette",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"theme.palette\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"primary\":{\"edit\":{\"label\":\"Primary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Primary\",\"searchable\":false,\"sortable\":false}},\"secondary\":{\"edit\":{\"label\":\"Secondary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Secondary\",\"searchable\":false,\"sortable\":false}},\"success\":{\"edit\":{\"label\":\"Success\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Success\",\"searchable\":false,\"sortable\":false}},\"error\":{\"edit\":{\"label\":\"Error\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Error\",\"searchable\":false,\"sortable\":false}},\"warning\":{\"edit\":{\"label\":\"Warning\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Warning\",\"searchable\":false,\"sortable\":false}},\"info\":{\"edit\":{\"label\":\"Info\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Info\",\"searchable\":false,\"sortable\":false}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"type\"],\"edit\":[[{\"name\":\"primary\",\"size\":12}],[{\"name\":\"secondary\",\"size\":12}],[{\"name\":\"success\",\"size\":12}],[{\"name\":\"error\",\"size\":12}],[{\"name\":\"warning\",\"size\":12}],[{\"name\":\"info\",\"size\":12}],[{\"name\":\"type\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde3"
+  },
+  "key": "plugin_users-permissions_email",
+  "environment": "",
+  "tag": "",
+  "value": "{\"reset_password\":{\"display\":\"Email.template.reset_password\",\"icon\":\"sync\",\"options\":{\"from\":{\"name\":\"Administration Panel\",\"email\":\"no-reply@strapi.io\"},\"response_email\":\"\",\"object\":\"Reset password\",\"message\":\"<p>We heard that you lost your password. Sorry about that!</p>\\n\\n<p>But don’t worry! You can use the following link to reset your password:</p>\\n<p><%= URL %>?code=<%= TOKEN %></p>\\n\\n<p>Thanks.</p>\"}},\"email_confirmation\":{\"display\":\"Email.template.email_confirmation\",\"icon\":\"check-square\",\"options\":{\"from\":{\"name\":\"Administration Panel\",\"email\":\"no-reply@strapi.io\"},\"response_email\":\"\",\"object\":\"Account confirmation\",\"message\":\"<p>Thank you for registering!</p>\\n\\n<p>You have to confirm your email address. Please click on the link below.</p>\\n\\n<p><%= URL %>?confirmation=<%= CODE %></p>\\n\\n<p>Thanks.</p>\"}}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde4"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-catalog.portal-catalog",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-catalog.portal-catalog\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"title\",\"summary\"],\"editRelations\":[\"portal\"],\"edit\":[[{\"name\":\"section\",\"size\":12}],[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde5"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-home.portal-home",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-home.portal-home\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"sections\":{\"edit\":{\"label\":\"Sections\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Sections\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"published_at\",\"createdAt\"],\"edit\":[[{\"name\":\"sections\",\"size\":12}]],\"editRelations\":[\"portal\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde6"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-menu.portal-menu",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-menu.portal-menu\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"items\":{\"edit\":{\"label\":\"Items\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Items\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"published_at\",\"createdAt\"],\"editRelations\":[\"portal\"],\"edit\":[[{\"name\":\"items\",\"size\":12}],[{\"name\":\"buttons\",\"size\":12}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde7"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-theme.portal-theme",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-theme.portal-theme\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"palette\":{\"edit\":{\"label\":\"Palette\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Palette\",\"searchable\":false,\"sortable\":false}},\"logo\":{\"edit\":{\"label\":\"Logo\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Logo\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"logo\",\"published_at\"],\"editRelations\":[\"portal\"],\"edit\":[[{\"name\":\"palette\",\"size\":12}],[{\"name\":\"logo\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde8"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal.portal",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal.portal\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"portal_home\":{\"edit\":{\"label\":\"Portal_home\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Portal_home\",\"searchable\":true,\"sortable\":true}},\"portal_theme\":{\"edit\":{\"label\":\"Portal_theme\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Portal_theme\",\"searchable\":true,\"sortable\":true}},\"portal_catalog\":{\"edit\":{\"label\":\"Portal_catalog\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"title\"},\"list\":{\"label\":\"Portal_catalog\",\"searchable\":true,\"sortable\":true}},\"portal_pages\":{\"edit\":{\"label\":\"Portal_pages\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"title\"},\"list\":{\"label\":\"Portal_pages\",\"searchable\":false,\"sortable\":false}},\"portal_menu\":{\"edit\":{\"label\":\"Portal_menu\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Portal_menu\",\"searchable\":true,\"sortable\":true}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"portal_home\",\"portal_theme\"],\"editRelations\":[\"portal_home\",\"portal_theme\",\"portal_catalog\",\"portal_pages\",\"portal_menu\"],\"edit\":[[{\"name\":\"name\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdde9"
+  },
+  "key": "plugin_content_manager_configuration_content_types::strapi::permission",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"strapi::permission\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"action\",\"defaultSortBy\":\"action\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"action\":{\"edit\":{\"label\":\"Action\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Action\",\"searchable\":true,\"sortable\":true}},\"subject\":{\"edit\":{\"label\":\"Subject\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Subject\",\"searchable\":true,\"sortable\":true}},\"fields\":{\"edit\":{\"label\":\"Fields\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Fields\",\"searchable\":false,\"sortable\":false}},\"conditions\":{\"edit\":{\"label\":\"Conditions\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Conditions\",\"searchable\":false,\"sortable\":false}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"action\",\"subject\",\"role\"],\"editRelations\":[\"role\"],\"edit\":[[{\"name\":\"action\",\"size\":6},{\"name\":\"subject\",\"size\":6}],[{\"name\":\"fields\",\"size\":12}],[{\"name\":\"conditions\",\"size\":12}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddea"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.permission",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::users-permissions.permission\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"type\",\"defaultSortBy\":\"type\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}},\"controller\":{\"edit\":{\"label\":\"Controller\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Controller\",\"searchable\":true,\"sortable\":true}},\"action\":{\"edit\":{\"label\":\"Action\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Action\",\"searchable\":true,\"sortable\":true}},\"enabled\":{\"edit\":{\"label\":\"Enabled\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Enabled\",\"searchable\":true,\"sortable\":true}},\"policy\":{\"edit\":{\"label\":\"Policy\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Policy\",\"searchable\":true,\"sortable\":true}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"type\",\"controller\",\"action\"],\"editRelations\":[\"role\"],\"edit\":[[{\"name\":\"type\",\"size\":6},{\"name\":\"controller\",\"size\":6}],[{\"name\":\"action\",\"size\":6},{\"name\":\"enabled\",\"size\":4}],[{\"name\":\"policy\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddeb"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.role",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::users-permissions.role\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":true,\"sortable\":true}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}},\"permissions\":{\"edit\":{\"label\":\"Permissions\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"type\"},\"list\":{\"label\":\"Permissions\",\"searchable\":false,\"sortable\":false}},\"users\":{\"edit\":{\"label\":\"Users\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"username\"},\"list\":{\"label\":\"Users\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"name\",\"description\",\"type\"],\"editRelations\":[\"permissions\",\"users\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"description\",\"size\":6}],[{\"name\":\"type\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddec"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.user",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::users-permissions.user\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"username\",\"defaultSortBy\":\"username\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"username\":{\"edit\":{\"label\":\"Username\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Username\",\"searchable\":true,\"sortable\":true}},\"email\":{\"edit\":{\"label\":\"Email\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Email\",\"searchable\":true,\"sortable\":true}},\"provider\":{\"edit\":{\"label\":\"Provider\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Provider\",\"searchable\":true,\"sortable\":true}},\"password\":{\"edit\":{\"label\":\"Password\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Password\",\"searchable\":true,\"sortable\":true}},\"resetPasswordToken\":{\"edit\":{\"label\":\"ResetPasswordToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"ResetPasswordToken\",\"searchable\":true,\"sortable\":true}},\"confirmationToken\":{\"edit\":{\"label\":\"ConfirmationToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"ConfirmationToken\",\"searchable\":true,\"sortable\":true}},\"confirmed\":{\"edit\":{\"label\":\"Confirmed\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Confirmed\",\"searchable\":true,\"sortable\":true}},\"blocked\":{\"edit\":{\"label\":\"Blocked\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Blocked\",\"searchable\":true,\"sortable\":true}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"username\",\"email\",\"confirmed\"],\"editRelations\":[\"role\"],\"edit\":[[{\"name\":\"username\",\"size\":6},{\"name\":\"email\",\"size\":6}],[{\"name\":\"password\",\"size\":6},{\"name\":\"confirmed\",\"size\":4}],[{\"name\":\"blocked\",\"size\":4}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cdded"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-page.portal-page",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-page.portal-page\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"slug\":{\"edit\":{\"label\":\"Slug\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Slug\",\"searchable\":true,\"sortable\":true}},\"sections\":{\"edit\":{\"label\":\"Sections\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Sections\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"title\",\"slug\"],\"edit\":[[{\"name\":\"title\",\"size\":6},{\"name\":\"slug\",\"size\":6}],[{\"name\":\"sections\",\"size\":12}]],\"editRelations\":[\"portal\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddee"
+  },
+  "key": "plugin_content_manager_configuration_content_types::strapi::role",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"strapi::role\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"code\":{\"edit\":{\"label\":\"Code\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Code\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":true,\"sortable\":true}},\"users\":{\"edit\":{\"label\":\"Users\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"firstname\"},\"list\":{\"label\":\"Users\",\"searchable\":false,\"sortable\":false}},\"permissions\":{\"edit\":{\"label\":\"Permissions\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"action\"},\"list\":{\"label\":\"Permissions\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"code\",\"description\"],\"editRelations\":[\"users\",\"permissions\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"code\",\"size\":6}],[{\"name\":\"description\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddef"
+  },
+  "key": "plugin_content_manager_configuration_content_types::strapi::user",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"strapi::user\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"firstname\",\"defaultSortBy\":\"firstname\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"firstname\":{\"edit\":{\"label\":\"Firstname\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Firstname\",\"searchable\":true,\"sortable\":true}},\"lastname\":{\"edit\":{\"label\":\"Lastname\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Lastname\",\"searchable\":true,\"sortable\":true}},\"username\":{\"edit\":{\"label\":\"Username\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Username\",\"searchable\":true,\"sortable\":true}},\"email\":{\"edit\":{\"label\":\"Email\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Email\",\"searchable\":true,\"sortable\":true}},\"password\":{\"edit\":{\"label\":\"Password\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Password\",\"searchable\":true,\"sortable\":true}},\"resetPasswordToken\":{\"edit\":{\"label\":\"ResetPasswordToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"ResetPasswordToken\",\"searchable\":true,\"sortable\":true}},\"registrationToken\":{\"edit\":{\"label\":\"RegistrationToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"RegistrationToken\",\"searchable\":true,\"sortable\":true}},\"isActive\":{\"edit\":{\"label\":\"IsActive\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"IsActive\",\"searchable\":true,\"sortable\":true}},\"roles\":{\"edit\":{\"label\":\"Roles\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Roles\",\"searchable\":false,\"sortable\":false}},\"blocked\":{\"edit\":{\"label\":\"Blocked\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Blocked\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"firstname\",\"lastname\",\"username\"],\"editRelations\":[\"roles\"],\"edit\":[[{\"name\":\"firstname\",\"size\":6},{\"name\":\"lastname\",\"size\":6}],[{\"name\":\"username\",\"size\":6},{\"name\":\"email\",\"size\":6}],[{\"name\":\"password\",\"size\":6},{\"name\":\"resetPasswordToken\",\"size\":6}],[{\"name\":\"registrationToken\",\"size\":6},{\"name\":\"isActive\",\"size\":4}],[{\"name\":\"blocked\",\"size\":4}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf0"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::upload.file",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::upload.file\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"alternativeText\":{\"edit\":{\"label\":\"AlternativeText\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"AlternativeText\",\"searchable\":true,\"sortable\":true}},\"caption\":{\"edit\":{\"label\":\"Caption\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Caption\",\"searchable\":true,\"sortable\":true}},\"width\":{\"edit\":{\"label\":\"Width\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Width\",\"searchable\":true,\"sortable\":true}},\"height\":{\"edit\":{\"label\":\"Height\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Height\",\"searchable\":true,\"sortable\":true}},\"formats\":{\"edit\":{\"label\":\"Formats\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Formats\",\"searchable\":false,\"sortable\":false}},\"hash\":{\"edit\":{\"label\":\"Hash\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Hash\",\"searchable\":true,\"sortable\":true}},\"ext\":{\"edit\":{\"label\":\"Ext\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Ext\",\"searchable\":true,\"sortable\":true}},\"mime\":{\"edit\":{\"label\":\"Mime\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Mime\",\"searchable\":true,\"sortable\":true}},\"size\":{\"edit\":{\"label\":\"Size\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Size\",\"searchable\":true,\"sortable\":true}},\"url\":{\"edit\":{\"label\":\"Url\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Url\",\"searchable\":true,\"sortable\":true}},\"previewUrl\":{\"edit\":{\"label\":\"PreviewUrl\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"PreviewUrl\",\"searchable\":true,\"sortable\":true}},\"provider\":{\"edit\":{\"label\":\"Provider\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Provider\",\"searchable\":true,\"sortable\":true}},\"provider_metadata\":{\"edit\":{\"label\":\"Provider_metadata\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Provider_metadata\",\"searchable\":false,\"sortable\":false}},\"related\":{\"edit\":{\"label\":\"Related\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Related\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"alternativeText\",\"caption\"],\"editRelations\":[\"related\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"alternativeText\",\"size\":6}],[{\"name\":\"caption\",\"size\":6},{\"name\":\"width\",\"size\":4}],[{\"name\":\"height\",\"size\":4}],[{\"name\":\"formats\",\"size\":12}],[{\"name\":\"hash\",\"size\":6},{\"name\":\"ext\",\"size\":6}],[{\"name\":\"mime\",\"size\":6},{\"name\":\"size\",\"size\":4}],[{\"name\":\"url\",\"size\":6},{\"name\":\"previewUrl\",\"size\":6}],[{\"name\":\"provider\",\"size\":6}],[{\"name\":\"provider_metadata\",\"size\":12}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a660b21343001c7cddf1"
+  },
+  "key": "plugin_users-permissions_advanced",
+  "environment": "",
+  "tag": "",
+  "value": "{\"unique_email\":true,\"allow_register\":true,\"email_confirmation\":false,\"email_reset_password\":null,\"email_confirmation_redirection\":null,\"default_role\":\"authenticated\"}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6054a664b21343001c7cdf63"
+  },
+  "key": "core_admin_auth",
+  "environment": "",
+  "tag": "",
+  "value": "{\"providers\":{\"autoRegister\":false,\"defaultRole\":null}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b46e8"
+  },
+  "key": "model_def_strapi::core-store",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::core-store\",\"collectionName\":\"core_store\",\"info\":{\"name\":\"core_store\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"key\":{\"type\":\"string\"},\"value\":{\"type\":\"text\"},\"type\":{\"type\":\"string\"},\"environment\":{\"type\":\"string\"},\"tag\":{\"type\":\"string\"}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b46e9"
+  },
+  "key": "model_def_plugins::users-permissions.permission",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::users-permissions.permission\",\"collectionName\":\"users-permissions_permission\",\"kind\":\"collectionType\",\"info\":{\"name\":\"permission\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"type\":{\"type\":\"string\",\"required\":true,\"configurable\":false},\"controller\":{\"type\":\"string\",\"required\":true,\"configurable\":false},\"action\":{\"type\":\"string\",\"required\":true,\"configurable\":false},\"enabled\":{\"type\":\"boolean\",\"required\":true,\"configurable\":false},\"policy\":{\"type\":\"string\",\"configurable\":false},\"role\":{\"model\":\"role\",\"via\":\"permissions\",\"plugin\":\"users-permissions\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b46ea"
+  },
+  "key": "model_def_strapi::permission",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::permission\",\"collectionName\":\"strapi_permission\",\"kind\":\"collectionType\",\"info\":{\"name\":\"Permission\",\"description\":\"\"},\"options\":{\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"action\":{\"type\":\"string\",\"minLength\":1,\"configurable\":false,\"required\":true},\"subject\":{\"type\":\"string\",\"minLength\":1,\"configurable\":false,\"required\":false},\"fields\":{\"type\":\"json\",\"configurable\":false,\"required\":false,\"default\":[]},\"conditions\":{\"type\":\"json\",\"configurable\":false,\"required\":false,\"default\":[]},\"role\":{\"configurable\":false,\"model\":\"role\",\"plugin\":\"admin\"}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b46ee"
+  },
+  "key": "model_def_plugins::upload.file",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::upload.file\",\"collectionName\":\"upload_file\",\"kind\":\"collectionType\",\"info\":{\"name\":\"file\",\"description\":\"\"},\"options\":{\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"name\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"alternativeText\":{\"type\":\"string\",\"configurable\":false},\"caption\":{\"type\":\"string\",\"configurable\":false},\"width\":{\"type\":\"integer\",\"configurable\":false},\"height\":{\"type\":\"integer\",\"configurable\":false},\"formats\":{\"type\":\"json\",\"configurable\":false},\"hash\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"ext\":{\"type\":\"string\",\"configurable\":false},\"mime\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"size\":{\"type\":\"decimal\",\"configurable\":false,\"required\":true},\"url\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"previewUrl\":{\"type\":\"string\",\"configurable\":false},\"provider\":{\"type\":\"string\",\"configurable\":false,\"required\":true},\"provider_metadata\":{\"type\":\"json\",\"configurable\":false},\"related\":{\"collection\":\"*\",\"filter\":\"field\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b46f9"
+  },
+  "key": "model_def_plugins::users-permissions.role",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::users-permissions.role\",\"collectionName\":\"users-permissions_role\",\"kind\":\"collectionType\",\"info\":{\"name\":\"role\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"name\":{\"type\":\"string\",\"minLength\":3,\"required\":true,\"configurable\":false},\"description\":{\"type\":\"string\",\"configurable\":false},\"type\":{\"type\":\"string\",\"unique\":true,\"configurable\":false},\"permissions\":{\"collection\":\"permission\",\"via\":\"role\",\"plugin\":\"users-permissions\",\"configurable\":false,\"isVirtual\":true},\"users\":{\"collection\":\"user\",\"via\":\"role\",\"configurable\":false,\"plugin\":\"users-permissions\",\"isVirtual\":true},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b46fb"
+  },
+  "key": "model_def_strapi::webhooks",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::webhooks\",\"collectionName\":\"strapi_webhooks\",\"info\":{\"name\":\"Strapi webhooks\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"name\":{\"type\":\"string\"},\"url\":{\"type\":\"text\"},\"headers\":{\"type\":\"json\"},\"events\":{\"type\":\"json\"},\"enabled\":{\"type\":\"boolean\"}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b46fd"
+  },
+  "key": "model_def_strapi::role",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::role\",\"collectionName\":\"strapi_role\",\"kind\":\"collectionType\",\"info\":{\"name\":\"Role\",\"description\":\"\"},\"options\":{\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"name\":{\"type\":\"string\",\"minLength\":1,\"unique\":true,\"configurable\":false,\"required\":true},\"code\":{\"type\":\"string\",\"minLength\":1,\"unique\":true,\"configurable\":false,\"required\":true},\"description\":{\"type\":\"string\",\"configurable\":false},\"users\":{\"configurable\":false,\"collection\":\"user\",\"via\":\"roles\",\"plugin\":\"admin\",\"isVirtual\":true},\"permissions\":{\"configurable\":false,\"plugin\":\"admin\",\"collection\":\"permission\",\"via\":\"role\",\"isVirtual\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b4703"
+  },
+  "key": "model_def_plugins::users-permissions.user",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"plugins::users-permissions.user\",\"collectionName\":\"users-permissions_user\",\"kind\":\"collectionType\",\"info\":{\"name\":\"user\",\"description\":\"\"},\"options\":{\"draftAndPublish\":false,\"timestamps\":[\"createdAt\",\"updatedAt\"]},\"attributes\":{\"username\":{\"type\":\"string\",\"minLength\":3,\"unique\":true,\"configurable\":false,\"required\":true},\"email\":{\"type\":\"email\",\"minLength\":6,\"configurable\":false,\"required\":true},\"provider\":{\"type\":\"string\",\"configurable\":false},\"password\":{\"type\":\"password\",\"minLength\":6,\"configurable\":false,\"private\":true},\"resetPasswordToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"confirmationToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"confirmed\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false},\"blocked\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false},\"role\":{\"model\":\"role\",\"via\":\"users\",\"plugin\":\"users-permissions\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc3b22d360e13b4705"
+  },
+  "key": "model_def_strapi::user",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"strapi::user\",\"collectionName\":\"strapi_administrator\",\"kind\":\"collectionType\",\"info\":{\"name\":\"User\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"firstname\":{\"type\":\"string\",\"unique\":false,\"minLength\":1,\"configurable\":false,\"required\":false},\"lastname\":{\"type\":\"string\",\"unique\":false,\"minLength\":1,\"configurable\":false,\"required\":false},\"username\":{\"type\":\"string\",\"unique\":false,\"configurable\":false,\"required\":false},\"email\":{\"type\":\"email\",\"minLength\":6,\"configurable\":false,\"required\":true,\"unique\":true,\"private\":true},\"password\":{\"type\":\"password\",\"minLength\":6,\"configurable\":false,\"required\":false,\"private\":true},\"resetPasswordToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"registrationToken\":{\"type\":\"string\",\"configurable\":false,\"private\":true},\"isActive\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false,\"private\":true},\"roles\":{\"collection\":\"role\",\"collectionName\":\"strapi_users_roles\",\"via\":\"users\",\"dominant\":true,\"plugin\":\"admin\",\"configurable\":false,\"private\":true},\"blocked\":{\"type\":\"boolean\",\"default\":false,\"configurable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adc6"
+  },
+  "key": "plugin_users-permissions_grant",
+  "environment": "",
+  "tag": "",
+  "value": "{\"email\":{\"enabled\":true,\"icon\":\"envelope\"},\"discord\":{\"enabled\":false,\"icon\":\"discord\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/discord/callback\",\"scope\":[\"identify\",\"email\"]},\"facebook\":{\"enabled\":false,\"icon\":\"facebook-square\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/facebook/callback\",\"scope\":[\"email\"]},\"google\":{\"enabled\":false,\"icon\":\"google\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/google/callback\",\"scope\":[\"email\"]},\"github\":{\"enabled\":false,\"icon\":\"github\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/github/callback\",\"scope\":[\"user\",\"user:email\"]},\"microsoft\":{\"enabled\":false,\"icon\":\"windows\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/microsoft/callback\",\"scope\":[\"user.read\"]},\"twitter\":{\"enabled\":false,\"icon\":\"twitter\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/twitter/callback\"},\"instagram\":{\"enabled\":false,\"icon\":\"instagram\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/instagram/callback\",\"scope\":[\"user_profile\"]},\"vk\":{\"enabled\":false,\"icon\":\"vk\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/vk/callback\",\"scope\":[\"email\"]},\"twitch\":{\"enabled\":false,\"icon\":\"twitch\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/twitch/callback\",\"scope\":[\"user:read:email\"]},\"linkedin\":{\"enabled\":false,\"icon\":\"linkedin\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/linkedin/callback\",\"scope\":[\"r_liteprofile\",\"r_emailaddress\"]},\"cognito\":{\"enabled\":false,\"icon\":\"aws\",\"key\":\"\",\"secret\":\"\",\"subdomain\":\"my.subdomain.com\",\"callback\":\"/auth/cognito/callback\",\"scope\":[\"email\",\"openid\",\"profile\"]},\"reddit\":{\"enabled\":false,\"icon\":\"reddit\",\"key\":\"\",\"secret\":\"\",\"state\":true,\"callback\":\"/auth/reddit/callback\",\"scope\":[\"identity\"]},\"auth0\":{\"enabled\":false,\"icon\":\"\",\"key\":\"\",\"secret\":\"\",\"subdomain\":\"my-tenant.eu\",\"callback\":\"/auth/auth0/callback\",\"scope\":[\"openid\",\"email\",\"profile\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adc7"
+  },
+  "key": "plugin_upload_settings",
+  "environment": "development",
+  "tag": "",
+  "value": "{\"sizeOptimization\":true,\"responsiveDimensions\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adc8"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.permission",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::users-permissions.permission\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"type\",\"defaultSortBy\":\"type\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}},\"controller\":{\"edit\":{\"label\":\"Controller\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Controller\",\"searchable\":true,\"sortable\":true}},\"action\":{\"edit\":{\"label\":\"Action\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Action\",\"searchable\":true,\"sortable\":true}},\"enabled\":{\"edit\":{\"label\":\"Enabled\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Enabled\",\"searchable\":true,\"sortable\":true}},\"policy\":{\"edit\":{\"label\":\"Policy\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Policy\",\"searchable\":true,\"sortable\":true}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"type\",\"controller\",\"action\"],\"editRelations\":[\"role\"],\"edit\":[[{\"name\":\"type\",\"size\":6},{\"name\":\"controller\",\"size\":6}],[{\"name\":\"action\",\"size\":6},{\"name\":\"enabled\",\"size\":4}],[{\"name\":\"policy\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adc9"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.role",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::users-permissions.role\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":true,\"sortable\":true}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}},\"permissions\":{\"edit\":{\"label\":\"Permissions\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"type\"},\"list\":{\"label\":\"Permissions\",\"searchable\":false,\"sortable\":false}},\"users\":{\"edit\":{\"label\":\"Users\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"username\"},\"list\":{\"label\":\"Users\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"name\",\"description\",\"type\"],\"editRelations\":[\"permissions\",\"users\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"description\",\"size\":6}],[{\"name\":\"type\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adca"
+  },
+  "key": "plugin_content_manager_configuration_content_types::strapi::permission",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"strapi::permission\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"action\",\"defaultSortBy\":\"action\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"action\":{\"edit\":{\"label\":\"Action\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Action\",\"searchable\":true,\"sortable\":true}},\"subject\":{\"edit\":{\"label\":\"Subject\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Subject\",\"searchable\":true,\"sortable\":true}},\"fields\":{\"edit\":{\"label\":\"Fields\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Fields\",\"searchable\":false,\"sortable\":false}},\"conditions\":{\"edit\":{\"label\":\"Conditions\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Conditions\",\"searchable\":false,\"sortable\":false}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"action\",\"subject\",\"role\"],\"editRelations\":[\"role\"],\"edit\":[[{\"name\":\"action\",\"size\":6},{\"name\":\"subject\",\"size\":6}],[{\"name\":\"fields\",\"size\":12}],[{\"name\":\"conditions\",\"size\":12}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adcb"
+  },
+  "key": "plugin_content_manager_configuration_content_types::strapi::user",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"strapi::user\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"firstname\",\"defaultSortBy\":\"firstname\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"firstname\":{\"edit\":{\"label\":\"Firstname\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Firstname\",\"searchable\":true,\"sortable\":true}},\"lastname\":{\"edit\":{\"label\":\"Lastname\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Lastname\",\"searchable\":true,\"sortable\":true}},\"username\":{\"edit\":{\"label\":\"Username\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Username\",\"searchable\":true,\"sortable\":true}},\"email\":{\"edit\":{\"label\":\"Email\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Email\",\"searchable\":true,\"sortable\":true}},\"password\":{\"edit\":{\"label\":\"Password\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Password\",\"searchable\":true,\"sortable\":true}},\"resetPasswordToken\":{\"edit\":{\"label\":\"ResetPasswordToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"ResetPasswordToken\",\"searchable\":true,\"sortable\":true}},\"registrationToken\":{\"edit\":{\"label\":\"RegistrationToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"RegistrationToken\",\"searchable\":true,\"sortable\":true}},\"isActive\":{\"edit\":{\"label\":\"IsActive\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"IsActive\",\"searchable\":true,\"sortable\":true}},\"roles\":{\"edit\":{\"label\":\"Roles\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Roles\",\"searchable\":false,\"sortable\":false}},\"blocked\":{\"edit\":{\"label\":\"Blocked\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Blocked\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"firstname\",\"lastname\",\"username\"],\"editRelations\":[\"roles\"],\"edit\":[[{\"name\":\"firstname\",\"size\":6},{\"name\":\"lastname\",\"size\":6}],[{\"name\":\"username\",\"size\":6},{\"name\":\"email\",\"size\":6}],[{\"name\":\"password\",\"size\":6},{\"name\":\"resetPasswordToken\",\"size\":6}],[{\"name\":\"registrationToken\",\"size\":6},{\"name\":\"isActive\",\"size\":4}],[{\"name\":\"blocked\",\"size\":4}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adcc"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::upload.file",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::upload.file\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"alternativeText\":{\"edit\":{\"label\":\"AlternativeText\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"AlternativeText\",\"searchable\":true,\"sortable\":true}},\"caption\":{\"edit\":{\"label\":\"Caption\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Caption\",\"searchable\":true,\"sortable\":true}},\"width\":{\"edit\":{\"label\":\"Width\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Width\",\"searchable\":true,\"sortable\":true}},\"height\":{\"edit\":{\"label\":\"Height\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Height\",\"searchable\":true,\"sortable\":true}},\"formats\":{\"edit\":{\"label\":\"Formats\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Formats\",\"searchable\":false,\"sortable\":false}},\"hash\":{\"edit\":{\"label\":\"Hash\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Hash\",\"searchable\":true,\"sortable\":true}},\"ext\":{\"edit\":{\"label\":\"Ext\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Ext\",\"searchable\":true,\"sortable\":true}},\"mime\":{\"edit\":{\"label\":\"Mime\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Mime\",\"searchable\":true,\"sortable\":true}},\"size\":{\"edit\":{\"label\":\"Size\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Size\",\"searchable\":true,\"sortable\":true}},\"url\":{\"edit\":{\"label\":\"Url\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Url\",\"searchable\":true,\"sortable\":true}},\"previewUrl\":{\"edit\":{\"label\":\"PreviewUrl\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"PreviewUrl\",\"searchable\":true,\"sortable\":true}},\"provider\":{\"edit\":{\"label\":\"Provider\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Provider\",\"searchable\":true,\"sortable\":true}},\"provider_metadata\":{\"edit\":{\"label\":\"Provider_metadata\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Provider_metadata\",\"searchable\":false,\"sortable\":false}},\"related\":{\"edit\":{\"label\":\"Related\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Related\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"alternativeText\",\"caption\"],\"editRelations\":[\"related\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"alternativeText\",\"size\":6}],[{\"name\":\"caption\",\"size\":6},{\"name\":\"width\",\"size\":4}],[{\"name\":\"height\",\"size\":4}],[{\"name\":\"formats\",\"size\":12}],[{\"name\":\"hash\",\"size\":6},{\"name\":\"ext\",\"size\":6}],[{\"name\":\"mime\",\"size\":6},{\"name\":\"size\",\"size\":4}],[{\"name\":\"url\",\"size\":6},{\"name\":\"previewUrl\",\"size\":6}],[{\"name\":\"provider\",\"size\":6}],[{\"name\":\"provider_metadata\",\"size\":12}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adcd"
+  },
+  "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.user",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"plugins::users-permissions.user\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"username\",\"defaultSortBy\":\"username\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"username\":{\"edit\":{\"label\":\"Username\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Username\",\"searchable\":true,\"sortable\":true}},\"email\":{\"edit\":{\"label\":\"Email\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Email\",\"searchable\":true,\"sortable\":true}},\"provider\":{\"edit\":{\"label\":\"Provider\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Provider\",\"searchable\":true,\"sortable\":true}},\"password\":{\"edit\":{\"label\":\"Password\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Password\",\"searchable\":true,\"sortable\":true}},\"resetPasswordToken\":{\"edit\":{\"label\":\"ResetPasswordToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"ResetPasswordToken\",\"searchable\":true,\"sortable\":true}},\"confirmationToken\":{\"edit\":{\"label\":\"ConfirmationToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"ConfirmationToken\",\"searchable\":true,\"sortable\":true}},\"confirmed\":{\"edit\":{\"label\":\"Confirmed\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Confirmed\",\"searchable\":true,\"sortable\":true}},\"blocked\":{\"edit\":{\"label\":\"Blocked\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Blocked\",\"searchable\":true,\"sortable\":true}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"username\",\"email\",\"confirmed\"],\"editRelations\":[\"role\"],\"edit\":[[{\"name\":\"username\",\"size\":6},{\"name\":\"email\",\"size\":6}],[{\"name\":\"password\",\"size\":6},{\"name\":\"confirmed\",\"size\":4}],[{\"name\":\"blocked\",\"size\":4}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adce"
+  },
+  "key": "plugin_content_manager_configuration_content_types::strapi::role",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"strapi::role\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"code\":{\"edit\":{\"label\":\"Code\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Code\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":true,\"sortable\":true}},\"users\":{\"edit\":{\"label\":\"Users\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"firstname\"},\"list\":{\"label\":\"Users\",\"searchable\":false,\"sortable\":false}},\"permissions\":{\"edit\":{\"label\":\"Permissions\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"action\"},\"list\":{\"label\":\"Permissions\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"code\",\"description\"],\"editRelations\":[\"users\",\"permissions\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"code\",\"size\":6}],[{\"name\":\"description\",\"size\":6}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706adcf"
+  },
+  "key": "plugin_users-permissions_email",
+  "environment": "",
+  "tag": "",
+  "value": "{\"reset_password\":{\"display\":\"Email.template.reset_password\",\"icon\":\"sync\",\"options\":{\"from\":{\"name\":\"Administration Panel\",\"email\":\"no-reply@strapi.io\"},\"response_email\":\"\",\"object\":\"Reset password\",\"message\":\"<p>We heard that you lost your password. Sorry about that!</p>\\n\\n<p>But don’t worry! You can use the following link to reset your password:</p>\\n<p><%= URL %>?code=<%= TOKEN %></p>\\n\\n<p>Thanks.</p>\"}},\"email_confirmation\":{\"display\":\"Email.template.email_confirmation\",\"icon\":\"check-square\",\"options\":{\"from\":{\"name\":\"Administration Panel\",\"email\":\"no-reply@strapi.io\"},\"response_email\":\"\",\"object\":\"Account confirmation\",\"message\":\"<p>Thank you for registering!</p>\\n\\n<p>You have to confirm your email address. Please click on the link below.</p>\\n\\n<p><%= URL %>?confirmation=<%= CODE %></p>\\n\\n<p>Thanks.</p>\"}}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fc8930b174a706add0"
+  },
+  "key": "plugin_users-permissions_advanced",
+  "environment": "",
+  "tag": "",
+  "value": "{\"unique_email\":true,\"allow_register\":true,\"email_confirmation\":false,\"email_reset_password\":null,\"email_confirmation_redirection\":null,\"default_role\":\"authenticated\"}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a27fd8930b174a706aea6"
+  },
+  "key": "core_admin_auth",
+  "environment": "",
+  "tag": "",
+  "value": "{\"providers\":{\"autoRegister\":false,\"defaultRole\":null}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a29df3b22d360e13b4daf"
+  },
+  "key": "model_def_elements.button",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"elements.button\",\"collectionName\":\"components_elements_buttons\",\"info\":{\"name\":\"Button\",\"icon\":\"hand-pointer\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"text\":{\"type\":\"string\"},\"icon\":{\"type\":\"string\"},\"href\":{\"type\":\"string\"},\"size\":{\"type\":\"enumeration\",\"enum\":[\"large\",\"medium\",\"small\"]},\"color\":{\"type\":\"enumeration\",\"enum\":[\"default\",\"inherit\",\"primary\",\"secondary\"]},\"variant\":{\"type\":\"enumeration\",\"enum\":[\"contained\",\"outlined\",\"text\"]}}}"
+},{
+  "_id": {
+    "$oid": "604a29df9e44297981ecfa43"
+  },
+  "key": "plugin_content_manager_configuration_components::elements.button",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"elements.button\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"text\",\"defaultSortBy\":\"text\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"text\":{\"edit\":{\"label\":\"Text\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Text\",\"searchable\":true,\"sortable\":true}},\"icon\":{\"edit\":{\"label\":\"Icon\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Icon\",\"searchable\":true,\"sortable\":true}},\"href\":{\"edit\":{\"label\":\"Href\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Href\",\"searchable\":true,\"sortable\":true}},\"size\":{\"edit\":{\"label\":\"Size\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Size\",\"searchable\":true,\"sortable\":true}},\"color\":{\"edit\":{\"label\":\"Color\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Color\",\"searchable\":true,\"sortable\":true}},\"variant\":{\"edit\":{\"label\":\"Variant\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Variant\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"text\",\"icon\",\"href\"],\"edit\":[[{\"name\":\"text\",\"size\":6},{\"name\":\"icon\",\"size\":6}],[{\"name\":\"href\",\"size\":6}],[{\"name\":\"size\",\"size\":6},{\"name\":\"color\",\"size\":6}],[{\"name\":\"variant\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a2aee3b22d360e13b4f10"
+  },
+  "key": "model_def_theme.color-palette",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"theme.color-palette\",\"collectionName\":\"components_theme_color_palettes\",\"info\":{\"name\":\"ColorPalette\",\"icon\":\"ad\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"primary\":{\"type\":\"string\",\"required\":true},\"secondary\":{\"type\":\"string\",\"required\":true},\"background\":{\"type\":\"string\",\"required\":true},\"contentBackground\":{\"type\":\"string\",\"required\":true},\"text\":{\"type\":\"string\",\"required\":true},\"danger\":{\"type\":\"string\",\"required\":true},\"success\":{\"type\":\"string\",\"required\":true},\"warning\":{\"type\":\"string\",\"required\":true},\"info\":{\"type\":\"string\",\"required\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a2b2b3b22d360e13b4ff3"
+  },
+  "key": "model_def_theme.theme-mode",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"theme.theme-mode\",\"collectionName\":\"components_theme_theme_modes\",\"info\":{\"name\":\"ThemeMode\",\"icon\":\"address-book\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"mode\":{\"type\":\"string\"},\"logo\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false}}}"
+},{
+  "_id": {
+    "$oid": "604a2bb63b22d360e13b50dc"
+  },
+  "key": "model_def_elements.container",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"elements.container\",\"collectionName\":\"components_elements_sections\",\"info\":{\"name\":\"Section\",\"icon\":\"address-card\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"backgroundColor\":{\"type\":\"string\"},\"textColor\":{\"type\":\"string\"},\"backgroundImage\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false}}}"
+},{
+  "_id": {
+    "$oid": "604a2bb62ee74d7d7ff812f3"
+  },
+  "key": "plugin_content_manager_configuration_components::elements.container",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"elements.container\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"backgroundColor\",\"defaultSortBy\":\"backgroundColor\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"backgroundColor\":{\"edit\":{\"label\":\"BackgroundColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"BackgroundColor\",\"searchable\":true,\"sortable\":true}},\"textColor\":{\"edit\":{\"label\":\"TextColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"TextColor\",\"searchable\":true,\"sortable\":true}},\"backgroundImage\":{\"edit\":{\"label\":\"BackgroundImage\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"BackgroundImage\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"backgroundImage\",\"backgroundColor\",\"textColor\"],\"edit\":[[{\"name\":\"backgroundImage\",\"size\":6},{\"name\":\"backgroundColor\",\"size\":6}],[{\"name\":\"textColor\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a2ecd3b22d360e13b5314"
+  },
+  "key": "model_def_components.feature-item",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"components.feature-item\",\"collectionName\":\"components_components_feature_items\",\"info\":{\"name\":\"FeatureItem\",\"icon\":\"adjust\"},\"options\":{\"timestamps\":false},\"attributes\":{\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"href\":{\"type\":\"string\"},\"backgroundColor\":{\"type\":\"string\"},\"textColor\":{\"type\":\"string\"},\"image\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false}}}"
+},{
+  "_id": {
+    "$oid": "604a2ecdafbb2608b5692e99"
+  },
+  "key": "plugin_content_manager_configuration_components::components.feature-item",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"components.feature-item\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"href\":{\"edit\":{\"label\":\"Href\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Href\",\"searchable\":true,\"sortable\":true}},\"backgroundColor\":{\"edit\":{\"label\":\"BackgroundColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"BackgroundColor\",\"searchable\":true,\"sortable\":true}},\"textColor\":{\"edit\":{\"label\":\"TextColor\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"TextColor\",\"searchable\":true,\"sortable\":true}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\",\"href\"],\"edit\":[[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"href\",\"size\":6},{\"name\":\"backgroundColor\",\"size\":6}],[{\"name\":\"textColor\",\"size\":6},{\"name\":\"image\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a2f773b22d360e13b542b"
+  },
+  "key": "model_def_sections.hero",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"sections.hero\",\"collectionName\":\"components_sections_heroes\",\"info\":{\"name\":\"Hero\",\"icon\":\"air-freshener\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"image\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"}}}"
+},{
+  "_id": {
+    "$oid": "604a2f77a4c5d70a3c502a1c"
+  },
+  "key": "plugin_content_manager_configuration_components::sections.hero",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"sections.hero\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\",\"image\"],\"edit\":[[{\"name\":\"section\",\"size\":12}],[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"image\",\"size\":6}],[{\"name\":\"buttons\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a305e3b22d360e13b558a"
+  },
+  "key": "model_def_sections.multiple-features-section",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"sections.multiple-features-section\",\"collectionName\":\"components_sections_multiple_features_sections\",\"info\":{\"name\":\"MultipleFeaturesSection\",\"icon\":\"align-center\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"features\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"components.feature-item\"},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"}}}"
+},{
+  "_id": {
+    "$oid": "604a305e4603410c9834ce36"
+  },
+  "key": "plugin_content_manager_configuration_components::sections.multiple-features-section",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"sections.multiple-features-section\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"features\":{\"edit\":{\"label\":\"Features\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Features\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\"],\"edit\":[[{\"name\":\"section\",\"size\":12}],[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"features\",\"size\":12}],[{\"name\":\"buttons\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a30d73b22d360e13b56a8"
+  },
+  "key": "model_def_sections.single-feature-section",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"sections.single-feature-section\",\"collectionName\":\"components_sections_single_feature_sections\",\"info\":{\"name\":\"SingleFeatureSection\",\"icon\":\"apple-alt\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"image\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"}}}"
+},{
+  "_id": {
+    "$oid": "604a30d79dc3ba0dac7b7f42"
+  },
+  "key": "plugin_content_manager_configuration_components::sections.single-feature-section",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"sections.single-feature-section\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\",\"title\",\"summary\",\"image\"],\"edit\":[[{\"name\":\"section\",\"size\":12}],[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"image\",\"size\":6}],[{\"name\":\"buttons\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604a32273b22d360e13b5991"
+  },
+  "key": "model_def_application::theme.theme",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::theme.theme\",\"collectionName\":\"themes\",\"kind\":\"singleType\",\"info\":{\"name\":\"Theme\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"palette\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604a32c73b22d360e13b5c03"
+  },
+  "key": "model_def_application::home.home",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::home.home\",\"collectionName\":\"homes\",\"kind\":\"singleType\",\"info\":{\"name\":\"Home\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":false},\"attributes\":{\"hero\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"sections.hero\"},\"sections\":{\"type\":\"dynamiczone\",\"components\":[\"sections.multiple-features-section\",\"sections.single-feature-section\"]},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604ba0053b22d360e13c9bb5"
+  },
+  "key": "model_def_theme.palette-color",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"theme.palette-color\",\"collectionName\":\"components_theme_palette_colors\",\"info\":{\"name\":\"PaletteColor\",\"icon\":\"paint-roller\",\"description\":\"\"},\"options\":{\"timestamps\":false},\"attributes\":{\"light\":{\"type\":\"string\"},\"main\":{\"type\":\"string\",\"required\":true},\"dark\":{\"type\":\"string\"},\"contrastText\":{\"type\":\"string\"}}}"
+},{
+  "_id": {
+    "$oid": "604ba0060a0418137af0c426"
+  },
+  "key": "plugin_content_manager_configuration_components::theme.palette-color",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"theme.palette-color\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"light\",\"defaultSortBy\":\"light\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"light\":{\"edit\":{\"label\":\"Light\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Light\",\"searchable\":true,\"sortable\":true}},\"main\":{\"edit\":{\"label\":\"Main\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Main\",\"searchable\":true,\"sortable\":true}},\"dark\":{\"edit\":{\"label\":\"Dark\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Dark\",\"searchable\":true,\"sortable\":true}},\"contrastText\":{\"edit\":{\"label\":\"ContrastText\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"ContrastText\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"light\",\"main\",\"dark\"],\"edit\":[[{\"name\":\"light\",\"size\":6},{\"name\":\"main\",\"size\":6}],[{\"name\":\"dark\",\"size\":6},{\"name\":\"contrastText\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604ba1663b22d360e13c9d35"
+  },
+  "key": "model_def_theme.palette",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"theme.palette\",\"collectionName\":\"components_theme_palettes\",\"info\":{\"name\":\"Palette\",\"icon\":\"layer-group\"},\"options\":{\"timestamps\":false},\"attributes\":{\"primary\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"secondary\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"success\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"error\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"warning\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"info\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette-color\"},\"type\":{\"type\":\"enumeration\",\"enum\":[\"light\",\"dark\"]}}}"
+},{
+  "_id": {
+    "$oid": "604ba166afb6c717bc0c0249"
+  },
+  "key": "plugin_content_manager_configuration_components::theme.palette",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"theme.palette\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"primary\":{\"edit\":{\"label\":\"Primary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Primary\",\"searchable\":false,\"sortable\":false}},\"secondary\":{\"edit\":{\"label\":\"Secondary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Secondary\",\"searchable\":false,\"sortable\":false}},\"success\":{\"edit\":{\"label\":\"Success\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Success\",\"searchable\":false,\"sortable\":false}},\"error\":{\"edit\":{\"label\":\"Error\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Error\",\"searchable\":false,\"sortable\":false}},\"warning\":{\"edit\":{\"label\":\"Warning\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Warning\",\"searchable\":false,\"sortable\":false}},\"info\":{\"edit\":{\"label\":\"Info\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Info\",\"searchable\":false,\"sortable\":false}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"type\"],\"edit\":[[{\"name\":\"type\",\"size\":6}],[{\"name\":\"primary\",\"size\":12}],[{\"name\":\"secondary\",\"size\":12}],[{\"name\":\"success\",\"size\":12}],[{\"name\":\"error\",\"size\":12}],[{\"name\":\"warning\",\"size\":12}],[{\"name\":\"info\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9b373b22d360e13e478b"
+  },
+  "key": "model_def_application::portal.portal",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal.portal\",\"collectionName\":\"portals\",\"kind\":\"collectionType\",\"info\":{\"name\":\"Portal\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"name\":{\"type\":\"string\"},\"portal_home\":{\"via\":\"portal\",\"model\":\"portal-home\"},\"portal_theme\":{\"via\":\"portal\",\"model\":\"portal-theme\"},\"portal_catalog\":{\"via\":\"portal\",\"model\":\"portal-catalog\"},\"portal_pages\":{\"via\":\"portal\",\"collection\":\"portal-page\",\"isVirtual\":true},\"portal_menu\":{\"via\":\"portal\",\"model\":\"portal-menu\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604e9b3772a96c7ddfe94eb2"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal.portal",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal.portal\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"name\",\"defaultSortBy\":\"name\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"portal_home\":{\"edit\":{\"label\":\"Portal_home\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Portal_home\",\"searchable\":true,\"sortable\":true}},\"portal_theme\":{\"edit\":{\"label\":\"Portal_theme\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Portal_theme\",\"searchable\":true,\"sortable\":true}},\"portal_catalog\":{\"edit\":{\"label\":\"Portal_catalog\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"title\"},\"list\":{\"label\":\"Portal_catalog\",\"searchable\":true,\"sortable\":true}},\"portal_pages\":{\"edit\":{\"label\":\"Portal_pages\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"title\"},\"list\":{\"label\":\"Portal_pages\",\"searchable\":false,\"sortable\":false}},\"portal_menu\":{\"edit\":{\"label\":\"Portal_menu\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Portal_menu\",\"searchable\":true,\"sortable\":true}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"published_at\",\"createdAt\"],\"edit\":[[{\"name\":\"name\",\"size\":6}]],\"editRelations\":[\"portal_home\",\"portal_theme\",\"portal_catalog\",\"portal_pages\",\"portal_menu\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9bbc3b22d360e13e4967"
+  },
+  "key": "model_def_application::portal-home.portal-home",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-home.portal-home\",\"collectionName\":\"portal_homes\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalHome\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_home\"},\"hero\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"sections.hero\"},\"sections\":{\"type\":\"dynamiczone\",\"components\":[\"sections.multiple-features-section\",\"sections.single-feature-section\"]},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604e9bbccc45b27f21dafad1"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-home.portal-home",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-home.portal-home\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"hero\":{\"edit\":{\"label\":\"Hero\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Hero\",\"searchable\":false,\"sortable\":false}},\"sections\":{\"edit\":{\"label\":\"Sections\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Sections\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"published_at\",\"createdAt\"],\"edit\":[[{\"name\":\"hero\",\"size\":12}],[{\"name\":\"sections\",\"size\":12}]],\"editRelations\":[\"portal\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9f603b22d360e13e5157"
+  },
+  "key": "model_def_application::portal-theme.portal-theme",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-theme.portal-theme\",\"collectionName\":\"portal_themes\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalTheme\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_theme\"},\"palette\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"theme.palette\"},\"logo\":{\"model\":\"file\",\"via\":\"related\",\"allowedTypes\":[\"images\",\"files\",\"videos\"],\"plugin\":\"upload\",\"required\":false},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604e9f608b08920af7d2eeb1"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-theme.portal-theme",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-theme.portal-theme\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"palette\":{\"edit\":{\"label\":\"Palette\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Palette\",\"searchable\":false,\"sortable\":false}},\"logo\":{\"edit\":{\"label\":\"Logo\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Logo\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"edit\":[[{\"name\":\"logo\",\"size\":6}],[{\"name\":\"palette\",\"size\":12}]],\"editRelations\":[\"portal\"],\"list\":[\"id\",\"portal\",\"published_at\",\"createdAt\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604ea1193b22d360e13e5687"
+  },
+  "key": "model_def_application::portal-guide.portal-guide",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-guide.portal-guide\",\"collectionName\":\"portal_guides\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalGuide\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_guide\"},\"markdown\":{\"type\":\"richtext\"},\"hero\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"sections.hero\"},\"sections\":{\"type\":\"dynamiczone\",\"components\":[\"sections.multiple-features-section\",\"sections.single-feature-section\"]},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604f8c793b22d360e13eea66"
+  },
+  "key": "model_def_application::portal-help.portal-help",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-help.portal-help\",\"collectionName\":\"portal_helps\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalHelp\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_help\"},\"hero\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"sections.hero\"},\"sections\":{\"type\":\"dynamiczone\",\"components\":[\"sections.multiple-features-section\",\"sections.single-feature-section\"]},\"markdown\":{\"type\":\"richtext\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604f91253b22d360e13ef231"
+  },
+  "key": "model_def_application::portal-catalog.portal-catalog",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-catalog.portal-catalog\",\"collectionName\":\"portal_catalogs\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalCatalog\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_catalog\"},\"section\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"elements.container\"},\"title\":{\"type\":\"string\"},\"summary\":{\"type\":\"string\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "604f9126b04aa5667ce403f2"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-catalog.portal-catalog",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-catalog.portal-catalog\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"section\":{\"edit\":{\"label\":\"Section\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Section\",\"searchable\":false,\"sortable\":false}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"summary\":{\"edit\":{\"label\":\"Summary\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Summary\",\"searchable\":true,\"sortable\":true}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"title\",\"summary\"],\"edit\":[[{\"name\":\"title\",\"size\":6},{\"name\":\"summary\",\"size\":6}],[{\"name\":\"section\",\"size\":12}]],\"editRelations\":[\"portal\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60512d863b22d360e13fe898"
+  },
+  "key": "model_def_application::portal-doc-page.portal-doc-page",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-doc-page.portal-doc-page\",\"collectionName\":\"portal_doc_pages\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalContent\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"model\":\"portal\",\"via\":\"portal_doc_pages\"},\"hero\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"sections.hero\"},\"markdown\":{\"type\":\"richtext\"},\"slug\":{\"type\":\"string\"},\"title\":{\"type\":\"string\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6051311a3b22d360e13ff29f"
+  },
+  "key": "model_def_application::portal-page.portal-page",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-page.portal-page\",\"collectionName\":\"portal_pages\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalPage\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"model\":\"portal\",\"via\":\"portal_pages\"},\"title\":{\"type\":\"string\"},\"slug\":{\"type\":\"string\"},\"hero\":{\"type\":\"component\",\"repeatable\":false,\"component\":\"sections.hero\"},\"sections\":{\"type\":\"dynamiczone\",\"components\":[\"sections.multiple-features-section\",\"sections.single-feature-section\"]},\"markdown\":{\"type\":\"richtext\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "6051311a5ff131427a9a8db8"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-page.portal-page",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-page.portal-page\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"title\",\"defaultSortBy\":\"title\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"slug\":{\"edit\":{\"label\":\"Slug\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Slug\",\"searchable\":true,\"sortable\":true}},\"hero\":{\"edit\":{\"label\":\"Hero\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Hero\",\"searchable\":false,\"sortable\":false}},\"sections\":{\"edit\":{\"label\":\"Sections\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Sections\",\"searchable\":false,\"sortable\":false}},\"markdown\":{\"edit\":{\"label\":\"Markdown\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Markdown\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"title\",\"slug\"],\"editRelations\":[\"portal\"],\"edit\":[[{\"name\":\"title\",\"size\":6},{\"name\":\"slug\",\"size\":6}],[{\"name\":\"hero\",\"size\":12}],[{\"name\":\"sections\",\"size\":12}],[{\"name\":\"markdown\",\"size\":12}]]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605141383b22d360e1401417"
+  },
+  "key": "model_def_elements.menu-item",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"elements.menu-item\",\"collectionName\":\"components_elements_menu_items\",\"info\":{\"name\":\"MenuItem\",\"icon\":\"sitemap\"},\"options\":{\"timestamps\":false},\"attributes\":{\"label\":{\"type\":\"string\"},\"href\":{\"type\":\"string\"}}}"
+},{
+  "_id": {
+    "$oid": "6051413879682b6dee53de14"
+  },
+  "key": "plugin_content_manager_configuration_components::elements.menu-item",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"elements.menu-item\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"label\",\"defaultSortBy\":\"label\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"label\":{\"edit\":{\"label\":\"Label\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Label\",\"searchable\":true,\"sortable\":true}},\"href\":{\"edit\":{\"label\":\"Href\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Href\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"label\",\"href\"],\"edit\":[[{\"name\":\"label\",\"size\":6},{\"name\":\"href\",\"size\":6}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605141c33b22d360e140152a"
+  },
+  "key": "model_def_application::portal-menu.portal-menu",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"application::portal-menu.portal-menu\",\"collectionName\":\"portal_menus\",\"kind\":\"collectionType\",\"info\":{\"name\":\"PortalMenu\",\"description\":\"\"},\"options\":{\"increments\":true,\"timestamps\":[\"createdAt\",\"updatedAt\"],\"draftAndPublish\":true},\"attributes\":{\"portal\":{\"unique\":true,\"model\":\"portal\",\"via\":\"portal_menu\"},\"items\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.menu-item\"},\"buttons\":{\"type\":\"component\",\"repeatable\":true,\"component\":\"elements.button\"},\"published_at\":{\"type\":\"datetime\",\"configurable\":false},\"created_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true},\"updated_by\":{\"model\":\"user\",\"plugin\":\"admin\",\"configurable\":false,\"writable\":false,\"private\":true}}}"
+},{
+  "_id": {
+    "$oid": "605141c3d551a16f09b75963"
+  },
+  "key": "plugin_content_manager_configuration_content_types::application::portal-menu.portal-menu",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"application::portal-menu.portal-menu\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"portal\":{\"edit\":{\"label\":\"Portal\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Portal\",\"searchable\":true,\"sortable\":true}},\"items\":{\"edit\":{\"label\":\"Items\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Items\",\"searchable\":false,\"sortable\":false}},\"buttons\":{\"edit\":{\"label\":\"Buttons\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Buttons\",\"searchable\":false,\"sortable\":false}},\"published_at\":{\"edit\":{\"label\":\"Published_at\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Published_at\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"portal\",\"published_at\",\"createdAt\"],\"edit\":[[{\"name\":\"items\",\"size\":12}],[{\"name\":\"buttons\",\"size\":12}]],\"editRelations\":[\"portal\"]}}",
+  "type": "object",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60737829021dfbc3bc2beca5"
+  },
+  "key": "model_def_sections.markdown",
+  "environment": "",
+  "tag": "",
+  "type": "object",
+  "value": "{\"uid\":\"sections.markdown\",\"collectionName\":\"components_sections_markdowns\",\"info\":{\"name\":\"Markdown\",\"icon\":\"align-left\"},\"options\":{\"timestamps\":false},\"attributes\":{\"content\":{\"type\":\"richtext\"}}}"
+},{
+  "_id": {
+    "$oid": "607378296b3e24001c901352"
+  },
+  "key": "plugin_content_manager_configuration_components::sections.markdown",
+  "environment": "",
+  "tag": "",
+  "value": "{\"uid\":\"sections.markdown\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"content\":{\"edit\":{\"label\":\"Content\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Content\",\"searchable\":false,\"sortable\":false}}},\"layouts\":{\"list\":[\"id\"],\"edit\":[[{\"name\":\"content\",\"size\":12}]],\"editRelations\":[]},\"isComponent\":true}",
+  "type": "object",
+  "__v": 0
+}]

@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "605141f5d551a16f09b7596c"
+  },
+  "published_at": {
+    "$date": "2021-03-16T23:41:14.019Z"
+  },
+  "items": [
+    {
+      "_id": {
+        "$oid": "60743f3a6b3e24001c901431"
+      },
+      "kind": "ComponentElementsMenuItem",
+      "ref": {
+        "$oid": "605141f5d551a16f09b7596d"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60743f3a6b3e24001c901432"
+      },
+      "kind": "ComponentElementsMenuItem",
+      "ref": {
+        "$oid": "60743f326b3e24001c90142b"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60743f3a6b3e24001c901433"
+      },
+      "kind": "ComponentElementsMenuItem",
+      "ref": {
+        "$oid": "605145db63eb7a7302d1af64"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-03-16T23:40:37.041Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-12T12:38:18.112Z"
+  },
+  "__v": 1,
+  "created_by": {
+    "$oid": "604a28408930b174a706aea7"
+  },
+  "portal": {
+    "$oid": "604e9b4972a96c7ddfe94ec4"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "buttons": [
+    {
+      "_id": {
+        "$oid": "60743f3a6b3e24001c901434"
+      },
+      "kind": "ComponentElementsButton",
+      "ref": {
+        "$oid": "6051442c63eb7a7302d1af60"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "60743f3a6b3e24001c901435"
+      },
+      "kind": "ComponentElementsButton",
+      "ref": {
+        "$oid": "6051442c63eb7a7302d1af61"
+      }
+    }
+  ]
+}]

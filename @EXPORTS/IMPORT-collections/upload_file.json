@@ -1,0 +1,818 @@
+[{
+  "_id": {
+    "$oid": "608810ef43cbc9001b211ce0"
+  },
+  "name": "home-icon1.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_icon1_7dcabb2c27",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 6.5,
+  "width": 600,
+  "height": 600,
+  "url": "/uploads/home_icon1_7dcabb2c27.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-icon1.png",
+      "hash": "thumbnail_home_icon1_7dcabb2c27",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 6.05,
+      "path": null,
+      "url": "/uploads/thumbnail_home_icon1_7dcabb2c27.png"
+    },
+    "small": {
+      "name": "small_home-icon1.png",
+      "hash": "small_home_icon1_7dcabb2c27",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 500,
+      "size": 21.66,
+      "path": null,
+      "url": "/uploads/small_home_icon1_7dcabb2c27.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:07.185Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810ef43cbc9001b211ce1"
+  },
+  "name": "home-icon3.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_icon3_52ff440b7b",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 5.24,
+  "width": 600,
+  "height": 600,
+  "url": "/uploads/home_icon3_52ff440b7b.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-icon3.png",
+      "hash": "thumbnail_home_icon3_52ff440b7b",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 4.99,
+      "path": null,
+      "url": "/uploads/thumbnail_home_icon3_52ff440b7b.png"
+    },
+    "small": {
+      "name": "small_home-icon3.png",
+      "hash": "small_home_icon3_52ff440b7b",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 500,
+      "size": 17.15,
+      "path": null,
+      "url": "/uploads/small_home_icon3_52ff440b7b.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:07.364Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810ef43cbc9001b211ce2"
+  },
+  "name": "home-icon4.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_icon4_abb7c51857",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 6.37,
+  "width": 600,
+  "height": 600,
+  "url": "/uploads/home_icon4_abb7c51857.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-icon4.png",
+      "hash": "thumbnail_home_icon4_abb7c51857",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 5.39,
+      "path": null,
+      "url": "/uploads/thumbnail_home_icon4_abb7c51857.png"
+    },
+    "small": {
+      "name": "small_home-icon4.png",
+      "hash": "small_home_icon4_abb7c51857",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 500,
+      "size": 20.33,
+      "path": null,
+      "url": "/uploads/small_home_icon4_abb7c51857.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:07.376Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810ef43cbc9001b211ce3"
+  },
+  "name": "home-icon2.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_icon2_1583ba0bab",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 6.07,
+  "width": 600,
+  "height": 600,
+  "url": "/uploads/home_icon2_1583ba0bab.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-icon2.png",
+      "hash": "thumbnail_home_icon2_1583ba0bab",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 5.63,
+      "path": null,
+      "url": "/uploads/thumbnail_home_icon2_1583ba0bab.png"
+    },
+    "small": {
+      "name": "small_home-icon2.png",
+      "hash": "small_home_icon2_1583ba0bab",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 500,
+      "size": 22.01,
+      "path": null,
+      "url": "/uploads/small_home_icon2_1583ba0bab.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:07.385Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f243cbc9001b211ce4"
+  },
+  "name": "home-icon7.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_icon7_287302b455",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 3.7,
+  "width": 600,
+  "height": 600,
+  "url": "/uploads/home_icon7_287302b455.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-icon7.png",
+      "hash": "thumbnail_home_icon7_287302b455",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 3.84,
+      "path": null,
+      "url": "/uploads/thumbnail_home_icon7_287302b455.png"
+    },
+    "small": {
+      "name": "small_home-icon7.png",
+      "hash": "small_home_icon7_287302b455",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 500,
+      "size": 12.79,
+      "path": null,
+      "url": "/uploads/small_home_icon7_287302b455.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:10.676Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f243cbc9001b211ce5"
+  },
+  "name": "home-support-image.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_support_image_08b730fcaf",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 9.52,
+  "width": 634,
+  "height": 440,
+  "url": "/uploads/home_support_image_08b730fcaf.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-support-image.png",
+      "hash": "thumbnail_home_support_image_08b730fcaf",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 225,
+      "height": 156,
+      "size": 19.2,
+      "path": null,
+      "url": "/uploads/thumbnail_home_support_image_08b730fcaf.png"
+    },
+    "small": {
+      "name": "small_home-support-image.png",
+      "hash": "small_home_support_image_08b730fcaf",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 347,
+      "size": 51.23,
+      "path": null,
+      "url": "/uploads/small_home_support_image_08b730fcaf.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:10.678Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f243cbc9001b211ce6"
+  },
+  "name": "home-icon5.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_icon5_5683d66ae9",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 10.85,
+  "width": 600,
+  "height": 600,
+  "url": "/uploads/home_icon5_5683d66ae9.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-icon5.png",
+      "hash": "thumbnail_home_icon5_5683d66ae9",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 9.63,
+      "path": null,
+      "url": "/uploads/thumbnail_home_icon5_5683d66ae9.png"
+    },
+    "small": {
+      "name": "small_home-icon5.png",
+      "hash": "small_home_icon5_5683d66ae9",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 500,
+      "size": 42.46,
+      "path": null,
+      "url": "/uploads/small_home_icon5_5683d66ae9.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:10.679Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f243cbc9001b211ce7"
+  },
+  "name": "home-hero-image.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_hero_image_632fac347f",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 54.65,
+  "width": 1920,
+  "height": 1080,
+  "url": "/uploads/home_hero_image_632fac347f.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-hero-image.png",
+      "hash": "thumbnail_home_hero_image_632fac347f",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 245,
+      "height": 138,
+      "size": 18.99,
+      "path": null,
+      "url": "/uploads/thumbnail_home_hero_image_632fac347f.png"
+    },
+    "large": {
+      "name": "large_home-hero-image.png",
+      "hash": "large_home_hero_image_632fac347f",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 1000,
+      "height": 563,
+      "size": 98.41,
+      "path": null,
+      "url": "/uploads/large_home_hero_image_632fac347f.png"
+    },
+    "medium": {
+      "name": "medium_home-hero-image.png",
+      "hash": "medium_home_hero_image_632fac347f",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 750,
+      "height": 422,
+      "size": 68.71,
+      "path": null,
+      "url": "/uploads/medium_home_hero_image_632fac347f.png"
+    },
+    "small": {
+      "name": "small_home-hero-image.png",
+      "hash": "small_home_hero_image_632fac347f",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 281,
+      "size": 42.44,
+      "path": null,
+      "url": "/uploads/small_home_hero_image_632fac347f.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:10.786Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f243cbc9001b211ce8"
+  },
+  "name": "home-icon6.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_icon6_f53ea72d7c",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 8.76,
+  "width": 600,
+  "height": 600,
+  "url": "/uploads/home_icon6_f53ea72d7c.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-icon6.png",
+      "hash": "thumbnail_home_icon6_f53ea72d7c",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 8.22,
+      "path": null,
+      "url": "/uploads/thumbnail_home_icon6_f53ea72d7c.png"
+    },
+    "small": {
+      "name": "small_home-icon6.png",
+      "hash": "small_home_icon6_f53ea72d7c",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 500,
+      "size": 33.34,
+      "path": null,
+      "url": "/uploads/small_home_icon6_f53ea72d7c.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:10.793Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f343cbc9001b211ce9"
+  },
+  "name": "logo-python.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "logo_python_1b5ec6c601",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 4.56,
+  "width": 440,
+  "height": 440,
+  "url": "/uploads/logo_python_1b5ec6c601.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_logo-python.png",
+      "hash": "thumbnail_logo_python_1b5ec6c601",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 5.26,
+      "path": null,
+      "url": "/uploads/thumbnail_logo_python_1b5ec6c601.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:11.773Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f343cbc9001b211cea"
+  },
+  "name": "logo-php.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "logo_php_9ead6110b8",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 5.51,
+  "width": 440,
+  "height": 440,
+  "url": "/uploads/logo_php_9ead6110b8.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_logo-php.png",
+      "hash": "thumbnail_logo_php_9ead6110b8",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 7.36,
+      "path": null,
+      "url": "/uploads/thumbnail_logo_php_9ead6110b8.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:11.775Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f343cbc9001b211ceb"
+  },
+  "name": "logo-java.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "logo_java_a9e9b5ea07",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 6.26,
+  "width": 440,
+  "height": 440,
+  "url": "/uploads/logo_java_a9e9b5ea07.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_logo-java.png",
+      "hash": "thumbnail_logo_java_a9e9b5ea07",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 6.64,
+      "path": null,
+      "url": "/uploads/thumbnail_logo_java_a9e9b5ea07.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:11.776Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f443cbc9001b211cec"
+  },
+  "name": "VV Logo.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "VV_Logo_0e7c9ca7e7",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 9.89,
+  "width": 820,
+  "height": 100,
+  "url": "/uploads/VV_Logo_0e7c9ca7e7.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_VV Logo.png",
+      "hash": "thumbnail_VV_Logo_0e7c9ca7e7",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 245,
+      "height": 30,
+      "size": 8.85,
+      "path": null,
+      "url": "/uploads/thumbnail_VV_Logo_0e7c9ca7e7.png"
+    },
+    "medium": {
+      "name": "medium_VV Logo.png",
+      "hash": "medium_VV_Logo_0e7c9ca7e7",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 750,
+      "height": 91,
+      "size": 47.7,
+      "path": null,
+      "url": "/uploads/medium_VV_Logo_0e7c9ca7e7.png"
+    },
+    "small": {
+      "name": "small_VV Logo.png",
+      "hash": "small_VV_Logo_0e7c9ca7e7",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 61,
+      "size": 26.44,
+      "path": null,
+      "url": "/uploads/small_VV_Logo_0e7c9ca7e7.png"
+    }
+  },
+  "provider": "local",
+  "related": [
+    {
+      "_id": {
+        "$oid": "608811aa43cbc9001b211d1b"
+      },
+      "ref": {
+        "$oid": "604e9fe18b08920af7d2eec6"
+      },
+      "kind": "PortalTheme",
+      "field": "logo"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:12.174Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-27T13:29:14.624Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f443cbc9001b211ced"
+  },
+  "name": "logo-ruby.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "logo_ruby_8dd5936a08",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 9.05,
+  "width": 440,
+  "height": 440,
+  "url": "/uploads/logo_ruby_8dd5936a08.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_logo-ruby.png",
+      "hash": "thumbnail_logo_ruby_8dd5936a08",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 156,
+      "height": 156,
+      "size": 8.08,
+      "path": null,
+      "url": "/uploads/thumbnail_logo_ruby_8dd5936a08.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:12.186Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+},{
+  "_id": {
+    "$oid": "608810f643cbc9001b211cee"
+  },
+  "name": "home-hero-background.png",
+  "alternativeText": "",
+  "caption": "",
+  "hash": "home_hero_background_7ea7809ecc",
+  "ext": ".png",
+  "mime": "image/png",
+  "size": 566.79,
+  "width": 1920,
+  "height": 513,
+  "url": "/uploads/home_hero_background_7ea7809ecc.png",
+  "formats": {
+    "thumbnail": {
+      "name": "thumbnail_home-hero-background.png",
+      "hash": "thumbnail_home_hero_background_7ea7809ecc",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 245,
+      "height": 65,
+      "size": 14.19,
+      "path": null,
+      "url": "/uploads/thumbnail_home_hero_background_7ea7809ecc.png"
+    },
+    "large": {
+      "name": "large_home-hero-background.png",
+      "hash": "large_home_hero_background_7ea7809ecc",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 1000,
+      "height": 267,
+      "size": 305.1,
+      "path": null,
+      "url": "/uploads/large_home_hero_background_7ea7809ecc.png"
+    },
+    "medium": {
+      "name": "medium_home-hero-background.png",
+      "hash": "medium_home_hero_background_7ea7809ecc",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 750,
+      "height": 200,
+      "size": 154.32,
+      "path": null,
+      "url": "/uploads/medium_home_hero_background_7ea7809ecc.png"
+    },
+    "small": {
+      "name": "small_home-hero-background.png",
+      "hash": "small_home_hero_background_7ea7809ecc",
+      "ext": ".png",
+      "mime": "image/png",
+      "width": 500,
+      "height": 134,
+      "size": 60.39,
+      "path": null,
+      "url": "/uploads/small_home_hero_background_7ea7809ecc.png"
+    }
+  },
+  "provider": "local",
+  "related": [],
+  "createdAt": {
+    "$date": "2021-04-27T13:26:14.229Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-12T17:35:31.360Z"
+  },
+  "__v": 0,
+  "created_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  },
+  "updated_by": {
+    "$oid": "6054a8b0b21343001c7cdf64"
+  }
+}]

@@ -1,0 +1,87 @@
+[{
+  "_id": {
+    "$oid": "604bad22c8e1f12d36ae46ad"
+  },
+  "main": "#009200",
+  "dark": "#006700",
+  "contrastText": "#ffffff",
+  "light": "#51c43f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604bad22c8e1f12d36ae46af"
+  },
+  "main": "#fdbe3d",
+  "light": "#fff06f",
+  "dark": "#c68e00",
+  "contrastText": "#18483C",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604bad22c8e1f12d36ae46b1"
+  },
+  "main": "#3FAA69",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604bad22c8e1f12d36ae46b3"
+  },
+  "main": "#C31C55",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604bad22c8e1f12d36ae46b5"
+  },
+  "main": "#ff9800",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604bad22c8e1f12d36ae46b7"
+  },
+  "main": "#1678D1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eec8"
+  },
+  "light": "#51c43f",
+  "main": "#009200",
+  "dark": "#006700",
+  "contrastText": "#ffffff",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eeca"
+  },
+  "light": "#fff06f",
+  "main": "#fdbe3d",
+  "contrastText": "#18483C",
+  "dark": "#c68e00",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eecc"
+  },
+  "main": "#77c124",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eece"
+  },
+  "main": "#B04247",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eed0"
+  },
+  "main": "#ff9800",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604e9fe18b08920af7d2eed2"
+  },
+  "main": "#1678D1",
+  "__v": 0,
+  "light": "#F3F7FF",
+  "dark": "#5F7B95"
+}]
